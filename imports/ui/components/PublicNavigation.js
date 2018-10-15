@@ -10,7 +10,7 @@ const PublicNavigation = () => (
   <div>
     <Nav>
       <IndexLinkContainer to="/">
-        <NavItem eventKey={ 1 } href="/">Index</NavItem>
+        <NavItem eventKey={ 1 } href="/">Home</NavItem>
       </IndexLinkContainer>
     </Nav>
     <Nav pullRight>

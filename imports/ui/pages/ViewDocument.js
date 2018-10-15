@@ -28,7 +28,9 @@ const ViewDocument = ({ doc }) => !doc ? <div>This document either doesn't exist
         </ButtonGroup>
       </ButtonToolbar>
     </div>
-    { doc.body }
+    <div className="ItemBody">{ doc.body }</div>
+    <div className="ItemBalance">{ doc.balance }</div>
+    <div className="ItemStatus">{ doc.status }</div>
     <br/><br/>
     <b>Created:</b> { doc.createdAt.toLocaleString() }
     <br/>

@@ -17,25 +17,44 @@ export default class DocumentEditor extends React.Component {
       onSubmit={ event => event.preventDefault() }
     >
       <FormGroup>
-        <ControlLabel>Title</ControlLabel>
+        <ControlLabel>Agency Name</ControlLabel>
         <FormControl
           type="text"
           name="title"
           defaultValue={ doc && doc.title }
-          placeholder="Oh, The Places You'll Go!"
+          placeholder="Enter the Credit Agency Name"
         />
       </FormGroup>
       <FormGroup>
-        <ControlLabel>Body</ControlLabel>
+        <ControlLabel>Account Number</ControlLabel>
         <FormControl
-          componentClass="textarea"
+          type="text"
           name="body"
           defaultValue={ doc && doc.body }
-          placeholder="Congratulations! Today is your day. You're off to Great Places! You're off and away!"
+          placeholder="Add the account number here."
+        />
+      </FormGroup>
+
+      <FormGroup>
+        <ControlLabel>Current Balance</ControlLabel>
+        <FormControl
+          type="text"
+          name="balance"
+          defaultValue={ doc && doc.balance }
+          placeholder="$123,456"
+        />
+      </FormGroup>
+      <FormGroup>
+        <ControlLabel>Letter Status</ControlLabel>
+        <FormControl
+          type="text"
+          name="status"
+          defaultValue={ doc && doc.status }
+          placeholder="Choose a status"
         />
       </FormGroup>
       <Button type="submit" bsStyle="success">
-        { doc && doc._id ? 'Save Changes' : 'Add Document' }
+        { doc && doc._id ? 'Save Changes' : 'Add Credit Item' }
       </Button>
     </form>);
   }

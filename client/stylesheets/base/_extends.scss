@@ -1,3 +1,4 @@
+*{transition: all 150ms ease-in-out;}
 %clearfix {
   *zoom: 1;
 
@@ -10,4 +11,119 @@
   &:after {
     clear: both;
   }
+}
+
+a.list-group-item {
+    background: #f5f6f7;
+    border: 0;
+    margin: 20px;
+    height: 90px;
+    border-radius: 0px;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0,0,0,.1);
+}
+
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+    background: #e6e9eb !important;
+}
+
+h5.agencyTitle {
+    font-size: 2rem;
+    text-transform: capitalize;
+    float: left;
+    width: 170px;
+    font-size: 1em;
+}
+
+h5.agencyBalance {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #ff5d5d;
+}
+
+h5.agencyBody {
+    position: absolute;
+    top: 32px;
+    right: 20px;
+    font-weight: 400;
+}
+
+/* h5.submitDate {
+    position: absolute;
+    top: 40px;
+    background: #ff605d;
+    padding: 3px 25px;
+    border-radius: 30px;
+    color: #fff;
+} */
+
+h5.agencyStatus {
+    position: absolute;
+    top: 40px;
+    background: #da4a47;
+    padding: 3px 25px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+a.agencyEdit {
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #ff5d5d;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #3ddb93 !important;
+    border-color: #3ddb93 !important;
+}
+
+a.pull-right.btn.btn-delete {
+    right: 120px;
+    position: absolute;
+    background: #31dc91;
+    color: #fff;
+    top: 27px;
+}
+a.pull-right.btn.btn-edit {
+    right: 20px;
+    position: absolute;
+    background: #31dc91;
+    color: #fff;
+    bottom: 10px;
+}
+
+a.pull-right.btn.btn-edit:hover {
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0,0,0,.1);
+    padding: 8px 14px;
+}
+
+@media (max-width: 430px) {
+a.list-group-item {
+    background: #f5f6f7;
+    border: 0;
+    margin: 0px 0px 0px 0px;
+    min-height: 90px;
+    border-radius: 0px;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
+    border-bottom: 1px #eaeaea solid;
+}
+
+h5.agencyTitle {
+    width: 170px;
+    top: 10px;
+    position: absolute;
+}
+
+h5.agencyStatus {
+    top: 50px;
+}
+
 }

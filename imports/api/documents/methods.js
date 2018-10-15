@@ -9,6 +9,8 @@ export const upsertDocument = new ValidatedMethod({
     _id: { type: String, optional: true },
     title: { type: String, optional: true },
     body: { type: String, optional: true },
+    balance: { type: String, optional: true },
+    status: { type: String, optional: true },
   }).validator(),
   run(document) {
     if (document._id) {

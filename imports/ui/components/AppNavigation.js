@@ -10,7 +10,7 @@ const AppNavigation = ({ hasUser }) => (
   <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
-        Base+FCC
+        <a href="/">LRBC</a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>

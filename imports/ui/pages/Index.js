@@ -6,7 +6,7 @@ import AllDocuments from '../containers/AllDocuments.js';
 const Index = () => (
   <div className="Index">
     <Jumbotron className="text-center">
-      <h2>Base+FCC</h2>
+      <h2>Legally Remove Bad Credit</h2>
       <p>A starting point for building <a href="http://freecodecamp.com/" target="_blank">FreeCodeCamp</a> projects with Meteor.</p>
       <p><a className="btn btn-success" href="https://themeteorchef.com/base" role="button">Read the Documentation for Base</a></p>
       <p style={ { fontSize: '16px', color: '#aaa' } }>Forked from gstephen's <a href="https://github.com/rgstephens/base/tree/extendDoc" target="_blank">MeteorChef/Base Restricted Access Branch</a> at v4.10.0</p>
@@ -22,12 +22,12 @@ const Index = () => (
       <Row>
         <Col xs={ 12 }>
           <div className="page-header clearfix">
-            <h4 className="pull-left">Documents</h4>
+            <h4 className="pull-left">Recently Submitted</h4>
             <Button
               bsStyle="success"
               className="pull-right"
               href="/documents/new"
-            >New Document</Button>
+            >Add New Credit Item</Button>
           </div>
           <AllDocuments />
         </Col>

@@ -4,23 +4,29 @@ import { ListGroup, ListGroupItem, Alert, Button } from 'react-bootstrap';
 const DocumentsList = ({ documents, userName }) => (
   <div>
     <div className="page-header clearfix">
-      <h4 className="pull-left">{ userName } Documents</h4>
+      <h4 className="pull-left">{ userName } Credit Items</h4>
       <Button
         bsStyle="success"
         className="pull-right"
         href="/documents/new"
-      >New Document</Button>
+      >New Credit Item</Button>
     </div>
     { documents.length > 0 ? <ListGroup className="DocumentsList">
-      {documents.map(({ _id, title }) => (
+      {documents.map(({ _id, title, body, balance, status, createdAt }) => (
         userName === 'My' ?
-        <ListGroupItem key={ _id } href={`/documents/${_id}`}>{ title }
+        <ListGroupItem key={ _id } href={`/documents/${_id}`}>
+          <h5 className="agencyTitle">{ title }</h5>
+          <h5 className="agencyBody">{}</h5>
+          <h5 className="agencyBalance">{ balance }</h5>
+          <a className="pull-right btn btn-edit" href={`/documents/${_id}/edit`}>Edit</a>
+          <h5 className="agencyStatus">{ status }</h5><br/>
+          <h5 className="submitDate">{ `12 Days Ago` }</h5>
         </ListGroupItem> :
         <ListGroupItem key={ _id }>{ title }
         </ListGroupItem>
       ))}
     </ListGroup> :
-    <Alert bsStyle="warning">No documents yet.</Alert> }
+    <Alert bsStyle="warning">No credit items yet.</Alert> }
   </div>
 );
 

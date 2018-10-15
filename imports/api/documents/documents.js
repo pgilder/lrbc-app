@@ -20,11 +20,19 @@ Documents.deny({
 Documents.schema = new SimpleSchema({
   title: {
     type: String,
-    label: 'The title of the document.',
+    label: 'The title of the credit item.',
   },
   body: {
     type: String,
-    label: 'The body of the document.',
+    label: 'The body of the credit item.',
+  },
+  balance: {
+    type: String,
+    label: 'The credit item balance.',
+  },
+  status: {
+    type: String,
+    label: 'The credit item status.',
   },
   createdAt: {
     type: Date,
@@ -47,6 +55,8 @@ Documents.attachSchema(Documents.schema);
 Factory.define('document', Documents, {
   title: () => 'Factory Title',
   body: () => 'Factory Body',
+  balance: () => 'Factory Balance',
+  status: () => 'Factory Status',
   createdAt: () => 'Factory Create Date',
   modifiedAt: () => 'Factory Modify Date',
   ownedBy: () => 'Factory User Created',
