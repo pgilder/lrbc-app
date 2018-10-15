@@ -50,3 +50,4 @@ borrowing heavily from <https://themeteorchef.com/base/getting-started> (go ahea
 Just check this out :) <https://medium.com/@leonardykris/how-to-run-a-meteor-js-application-on-heroku-in-10-steps-7aceb12de234#.nmyq8xpf7> 
 except note that the buildpack he recommends is old and you should use <https://github.com/AdmitHub/meteor-buildpack-horse>
 also you should grep a slightly different mongodb uri `heroku config | grep MONGODB_URI`
+# lrbc-app
