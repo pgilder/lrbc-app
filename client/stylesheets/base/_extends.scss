@@ -126,4 +126,42 @@ h5.agencyStatus {
     top: 50px;
 }
 
+.DocumentsList.list-group {
+    left: 0;
+    right: 0;
+    position: absolute;
 }
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
+    padding: 8px 14px;
+}
+
+/* MOBILE MENU START */
+@media (max-width: 430px) {
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    position: absolute;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    z-index: 99999999999;
+    height: 100vh;
+    left: 0;
+    right: 30%;
+    padding: 20%;
+    -webkit-box-shadow: 0px -1px 20px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -1px 20px 10px rgba(0, 0, 0, 0.2);
+}
+}
+/* MOBILE MENU END */
+
+
+/* LOADING START
+.logo-splash {position: absolute; display: inline; text-align: center; margin: auto; top: 45vh; bottom: 0; left: 0; right: 0;}
+.splash-bg {position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: #5cb85c; z-index: 9999999; color: #ffffff;}
+
+ LOADING END */

@@ -4,7 +4,7 @@ import { ListGroup, ListGroupItem, Alert, Button } from 'react-bootstrap';
 const DocumentsList = ({ documents, userName }) => (
   <div>
     <div className="page-header clearfix">
-      <h4 className="pull-left">{ userName } Credit Items</h4>
+      <h3 className="pull-left">{ userName } Credit Items</h3>
       <Button
         bsStyle="success"
         className="pull-right"
