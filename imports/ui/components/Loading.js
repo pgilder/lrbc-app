@@ -4,7 +4,7 @@ const Loading = () => (
 
   <div className="splash-bg">
     <div className="logo-splash">
-      <h1 className="animated pulse infinite">Loading...</h1>
+      <h1 className="animated infinite center-item"><img className="loading-icon" src="img/loader.svg" width="40" alt=""></img></h1>
     </div>
   </div>
 

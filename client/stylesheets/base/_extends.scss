@@ -1,4 +1,16 @@
 *{transition: all 150ms ease-in-out;}
+.navbar-default {
+    background-color: #f8f8f800 !important;
+    border-color: #e7e7e700 !important;
+}
+div#react-root {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(#1F7FF0, #5CCCD6);
+    z-index: 0;
+}
 %clearfix {
   *zoom: 1;
 
@@ -120,12 +132,27 @@ h5.agencyTitle {
     width: 170px;
     top: 10px;
     position: absolute;
+        left: 75px;
 }
 
 h5.agencyStatus {
     top: 50px;
+        left: 75px;
 }
 
+img.avatar {
+    width: 50px;
+    border-radius: 50px;
+    margin-top: 9px;
+}
+
+h5.submitDate {
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
 .DocumentsList.list-group {
     left: 0;
     right: 0;
@@ -134,8 +161,8 @@ h5.agencyStatus {
 }
 
 .navbar-default {
-    background-color: #ffffff;
-    border-color: #ffffff;
+    background-color: #ffffff00;
+    border-color: #ffffff00;
     box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
     padding: 8px 14px;
 }
@@ -156,12 +183,279 @@ h5.agencyStatus {
     -webkit-box-shadow: 0px -1px 20px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0px -1px 20px 10px rgba(0, 0, 0, 0.2);
 }
+
+.navbar-default .navbar-brand {
+    color: #777;
+    position: absolute;
+    margin: auto 0;
+    width: 92vw;
+    text-align: -webkit-center;
+}
 }
 /* MOBILE MENU END */
+/* TABLET MENU */
+@media (max-width: 767px) {
 
+.navbar-default .navbar-brand {
+    color: #777;
+    position: absolute;
+    margin: auto 0;
+    width: 48%;
+    text-align: -webkit-center;
+    margin: 0px 25vw;
+}
+}
+/* TABLET MENU END */
+
+.Index {
+    margin: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 67px;
+    z-index: -1;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 0px !important;
+}
+
+/* .text-center.jumbotron{background-image: url(img/bg1.jpg);} */
 
 /* LOADING START
+
+
 .logo-splash {position: absolute; display: inline; text-align: center; margin: auto; top: 45vh; bottom: 0; left: 0; right: 0;}
 .splash-bg {position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: #5cb85c; z-index: 9999999; color: #ffffff;}
 
  LOADING END */
+ h3.pull-left {
+     position: absolute;
+     color: #fff;
+     top: -16px;
+ }
+
+ .btn-add {
+     color: #fff;
+     background-color: #5cb85c;
+     border-color: #4cae4c;
+     top: 0;
+     position: absolute;
+     right: 15px;
+ }
+
+ div#react-root .NewDocument {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(#1F7FF0, #5CCCD6);
+    z-index: 0;
+    bottom: 0;
+    top: 0px;
+    z-index: -1;
+    padding: 30px;
+    color: #ffffff;
+}
+div#react-root .ViewDocument {
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   background-image: linear-gradient(#1F7FF0, #5CCCD6);
+   z-index: 0;
+   bottom: 0;
+   top: 0px;
+   z-index: -1;
+   padding: 110px 30px 30px 30px;
+   color: #ffffff;
+}
+
+div#react-root .EditDocument {
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   background-image: linear-gradient(#1F7FF0, #5CCCD6);
+   z-index: 0;
+   bottom: 0;
+   top: 0px;
+   z-index: -1;
+   padding: 30px;
+   color: #ffffff;
+}
+
+div#react-root .EditDocument .page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.navbar-default {
+    background-color: #ffffff00;
+    border-color: #ffffff00;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.0);
+    padding: 8px 14px;
+}
+
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle {
+    border: 0px solid transparent;
+}
+
+.navbar-toggle .collapsed .icon-bar {
+    display: block;
+    width: 27px;
+    height: 3px;
+    border-radius: 1px;
+    margin-top: 4px;
+    margin-right: -10px;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 29px;
+    height: 3px;
+    border-radius: 1px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+button.navbar-toggle.collapsed {
+    margin-right: -5px;
+}
+
+.navbar-toggle .collapsed .icon-bar {
+    display: block;
+    width: 29px;
+    height: 3px;
+    border-radius: 1px;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+.page-header {
+    padding-bottom: 50px;
+
+}
+
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+svg path,
+svg rect{
+  fill: #FFFFFF;
+}
+
+img.loading-icon {
+    margin: 0 auto;
+    width: 100vw;
+    height: 50px;
+}
+
+.logo-splash {
+    background-image: linear-gradient(#1F7FF0, #5CCCD6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.center-item {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 50vw auto;
+}
+
+div#react-root .ViewDocument .btn-toolbar {
+    margin-left: -5px;
+    position: fixed;
+    bottom: 20px;
+}
+
+div#react-root .ViewDocument a.btn.btn-default {
+    background: rgba(0, 0, 0, 0.21176470588235294);
+    border: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    padding-top: 14px;
+    color: #fff;
+    left: 20px;
+    position: fixed;
+    bottom: 20px;
+}
+
+div#react-root .ViewDocument button.text-danger.btn.btn-default {
+    background: rgba(0, 0, 0, 0.21176470588235294);
+    border: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    padding-top: 14px;
+    color: #fff;
+    right: 20px;
+    position: fixed;
+    bottom: 20px;
+}
+
+a.btn.btn-default svg {
+    height: 25px;
+}
+
+button.text-danger.btn.btn-default svg {
+    height: 25px;
+}
+
+.backIcon {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.backIcon a {
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+.backIcon img {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;
+    height: 30px;
+}
+
+.backIcon svg {
+    color: #ffffff;
+    position: absolute;
+    height: 30px;
+}
