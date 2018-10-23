@@ -10,7 +10,7 @@ const AppNavigation = ({ hasUser }) => (
   <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="/">POOL AID</a>
+        <a href="/"><img src="/img/pool_logo_white.png"></img></a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>

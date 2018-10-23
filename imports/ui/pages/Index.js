@@ -21,7 +21,7 @@ const Index = () => (
               bsStyle="success"
               className="pull-right"
               href="/documents/new"
-            >Add New Customer v</Button>
+            >Add New Customer</Button>
           </div>
           <AllDocuments />
         </Col>
