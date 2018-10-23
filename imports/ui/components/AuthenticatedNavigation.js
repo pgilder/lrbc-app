@@ -32,7 +32,29 @@ const AuthenticatedNavigation = () => (
         <MenuItem eventKey={ 3.1 } onClick={ handleLogout }>Logout</MenuItem>
       </NavDropdown>
     </Nav>
+
   </div>
 );
 
+/*
+const AuthenticatedAppbar = () => (
+  <div className="appbar">
+    <Nav>
+      <IndexLinkContainer to="/">
+        <NavItem eventKey={ 1 } href="/">Home</NavItem>
+      </IndexLinkContainer>
+      <LinkContainer to="/documents">
+        <NavItem eventKey={ 2 } href="/documents">Dashboard</NavItem>
+      </LinkContainer>
+    </Nav>
+    <Nav pullRight>
+      <NavDropdown eventKey={ 3 } title={ userName() } id="basic-nav-dropdown">
+        <MenuItem eventKey={ 3.1 } onClick={ handleLogout }>Logout</MenuItem>
+      </NavDropdown>
+    </Nav>
+
+  </div>
+); */
+
 export default AuthenticatedNavigation;
+// export default AuthenticatedAppbar;

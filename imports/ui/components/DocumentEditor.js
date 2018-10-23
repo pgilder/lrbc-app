@@ -17,12 +17,12 @@ export default class DocumentEditor extends React.Component {
       onSubmit={ event => event.preventDefault() }
     >
       <FormGroup>
-        <ControlLabel>Agency Name</ControlLabel>
+        <ControlLabel>Customer Name</ControlLabel>
         <FormControl
           type="text"
           name="title"
           defaultValue={ doc && doc.title }
-          placeholder="Enter the Credit Agency Name"
+          placeholder="Enter the Customer Name"
         />
       </FormGroup>
       <FormGroup>
@@ -45,16 +45,16 @@ export default class DocumentEditor extends React.Component {
         />
       </FormGroup>
       <FormGroup>
-        <ControlLabel>Letter Status</ControlLabel>
+        <ControlLabel>Route</ControlLabel>
         <FormControl
           type="text"
           name="status"
           defaultValue={ doc && doc.status }
-          placeholder="Choose a status"
+          placeholder="Choose a route"
         />
       </FormGroup>
       <Button type="submit" bsStyle="success">
-        { doc && doc._id ? 'Save Changes' : 'Add Credit Item' }
+        { doc && doc._id ? 'Save Changes' : 'Add Customer' }
       </Button>
     </form>);
   }

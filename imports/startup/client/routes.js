@@ -12,6 +12,8 @@ import EditDocument from '../../ui/containers/EditDocument.js';
 import ViewDocument from '../../ui/containers/ViewDocument.js';
 import Index from '../../ui/pages/Index.js';
 import Login from '../../ui/pages/Login.js';
+import Signup from '../../ui/pages/Signup.js';
+import Test from '../../ui/pages/Test.js';
 import NotFound from '../../ui/pages/NotFound.js';
 import RecoverPassword from '../../ui/pages/RecoverPassword.js';
 import ResetPassword from '../../ui/pages/ResetPassword.js';
@@ -39,6 +41,8 @@ Meteor.startup(() => {
         <Route name="recover-password" path="/recover-password" component={ RecoverPassword } />
         <Route name="reset-password" path="/reset-password/:token" component={ ResetPassword } />
         <Route name="login" path="/login" component={ Login } />
+        <Route name="signup" path="/signup" component={ Signup } />
+        <Route name="test" path="/test" component={ Test } />
         <Route path="*" component={ NotFound } />
       </Route>
     </Router>,
@@ -48,4 +52,3 @@ Meteor.startup(() => {
 
 // <IndexRoute name="index" component={ Index } onEnter={ authenticate } />
 // <Route name="signup" path="/signup" component={ Signup } />
-        

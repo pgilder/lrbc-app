@@ -2,20 +2,14 @@ import React from 'react';
 import { Row, Col, Button, Jumbotron } from 'react-bootstrap';
 // import { Row, Col, Button } from 'react-bootstrap';
 import AllDocuments from '../containers/AllDocuments.js';
+import { LoginButtons } from 'meteor/okgrow:accounts-ui-react';
 
 const Index = () => (
-  <div className="Index">
-    <Jumbotron className="text-center">
-      <h2>Legally Remove Bad Credit</h2>
-      <p>A starting point for building <a href="http://freecodecamp.com/" target="_blank">FreeCodeCamp</a> projects with Meteor.</p>
-      <p><a className="btn btn-success" href="https://themeteorchef.com/base" role="button">Read the Documentation for Base</a></p>
-      <p style={ { fontSize: '16px', color: '#aaa' } }>Forked from gstephen's <a href="https://github.com/rgstephens/base/tree/extendDoc" target="_blank">MeteorChef/Base Restricted Access Branch</a> at v4.10.0</p>
-      <ul style={ { 'textAlign': 'left' } }> <b>Features:</b>
-        <li>Twitter login</li>
-        <li>Unauthenticated view of all documents (without Editing ability although the API may be hackable)</li>
-        <li>My Documents page</li>
-      </ul>
-      <p>This code is published on github at <a href="https://github.com/sw-yx/base-fcc" target="_blank">https://github.com/sw-yx/base-fcc</a> and a sample is hosted on heroku at <a href="https://base-fcc.herokuapp.com/" target="_blank">https://base-fcc.herokuapp.com/</a></p>
+  <div className="Index pool-1-bg">
+    <Jumbotron className="text-center brand-overlay">
+      <h2>Welcome to Pool App</h2>
+      <LoginButtons />
+      <p><a className="btn btn-success" href="documents" role="button">Manage Accounts</a></p>
     </Jumbotron>
 
    <div className="Documents">
@@ -27,7 +21,7 @@ const Index = () => (
               bsStyle="success"
               className="pull-right"
               href="/documents/new"
-            >Add New Credit Item</Button>
+            >Add New Customer v</Button>
           </div>
           <AllDocuments />
         </Col>

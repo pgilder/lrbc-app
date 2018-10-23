@@ -19,6 +19,7 @@ export default class Login extends React.Component {
         <b>You are trying to access a secure part of the site. Please log in below to proceed.</b>
         <LoginButtons visible/>
       </div>
+      
     );
   }
 }

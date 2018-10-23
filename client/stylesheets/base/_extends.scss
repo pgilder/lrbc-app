@@ -1,14 +1,32 @@
 *{transition: all 150ms ease-in-out;}
+body {background: #f8f9fa !important;}
+.brand-bg{background: #0f94f8;}
+.navbar-default .navbar-brand {
+    color: #fff !important;
+}
+
 .navbar-default {
     background-color: #f8f8f800 !important;
     border-color: #e7e7e700 !important;
 }
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+#login-buttons a, .accounts-dialog a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
 div#react-root {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    background-image: linear-gradient(#1F7FF0, #5CCCD6);
+    background: #0f94f6;
     z-index: 0;
 }
 %clearfix {
@@ -117,15 +135,17 @@ a.pull-right.btn.btn-edit:hover {
     padding: 8px 14px;
 }
 
+
 @media (max-width: 430px) {
 a.list-group-item {
-    background: #f5f6f7;
+    background: #F5F6F7;
     border: 0;
-    margin: 0px 0px 0px 0px;
+    margin: 10px;
     min-height: 90px;
     border-radius: 0px;
     box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
     border-bottom: 1px #eaeaea solid;
+    border-left: solid 8px #46DA95;
 }
 
 h5.agencyTitle {
@@ -134,6 +154,7 @@ h5.agencyTitle {
     position: absolute;
         left: 75px;
 }
+
 
 h5.agencyStatus {
     top: 50px;
@@ -157,6 +178,7 @@ h5.submitDate {
     left: 0;
     right: 0;
     position: absolute;
+    top: 60px;
 }
 }
 
@@ -166,6 +188,12 @@ h5.submitDate {
     box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
     padding: 8px 14px;
 }
+
+.pool-1-bg {background-image: url(img/pool-1.jpg); height: 78vh; background-repeat: no-repeat; background-size: cover;}
+.pool-2-bg {background-image: url(img/pool-2.jpg); height: 78vh; background-repeat: no-repeat; background-size: cover;}
+.pool-3-bg {background-image: url(img/pool-3.jpg); height: 78vh; background-repeat: no-repeat; background-size: cover;}
+.pool-4-bg {background-image: url(img/pool-4.jpg); height: 78vh; background-repeat: no-repeat; background-size: cover;}
+.brand-overlay {}
 
 /* MOBILE MENU START */
 @media (max-width: 430px) {
@@ -190,6 +218,30 @@ h5.submitDate {
     margin: auto 0;
     width: 92vw;
     text-align: -webkit-center;
+}
+.page-header {
+  top: 60px;
+  left: 15px;
+  right: 15px;
+  color: #ffffff;
+}
+
+.Documents .page-header {
+    padding-bottom: 9px;
+    margin: 0px 22px;
+    border-bottom: 0px solid #eee;
+    background: none;
+    top: 20px;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    color: #333333 !important;
+}
+
+.Documents h3.pull-left {
+    position: absolute;
+    color: #333333;
+    top: -16px;
 }
 }
 /* MOBILE MENU END */
@@ -224,13 +276,40 @@ h5.submitDate {
 
 /* .text-center.jumbotron{background-image: url(img/bg1.jpg);} */
 
-/* LOADING START
+/* LOADING START */
 
 
 .logo-splash {position: absolute; display: inline; text-align: center; margin: auto; top: 45vh; bottom: 0; left: 0; right: 0;}
-.splash-bg {position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: #5cb85c; z-index: 9999999; color: #ffffff;}
+.splash-bg {position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 9999999; color: #ffffff;}
 
- LOADING END */
+div#react-root .Index .splash-bg {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    color: #ffffff;
+}
+div#react-root .Index .logo-splash {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    height: 100px;
+}
+
+div#react-root .Index img.loading-icon {
+    margin: 0 auto;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 150px;
+}
+
+/* LOADING END */
  h3.pull-left {
      position: absolute;
      color: #fff;
@@ -251,7 +330,7 @@ h5.submitDate {
     left: 0;
     right: 0;
     top: 0;
-    background-image: linear-gradient(#1F7FF0, #5CCCD6);
+    background: #0f94f6;
     z-index: 0;
     bottom: 0;
     top: 0px;
@@ -260,17 +339,17 @@ h5.submitDate {
     color: #ffffff;
 }
 div#react-root .ViewDocument {
-   position: fixed;
-   left: 0;
-   right: 0;
-   top: 0;
-   background-image: linear-gradient(#1F7FF0, #5CCCD6);
-   z-index: 0;
-   bottom: 0;
-   top: 0px;
-   z-index: -1;
-   padding: 110px 30px 30px 30px;
-   color: #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #0d72d2;
+  z-index: 0;
+  bottom: 0;
+  top: 60px;
+  z-index: -1;
+  padding: 110px 30px 30px 30px;
+  color: #ffffff;
 }
 
 div#react-root .EditDocument {
@@ -278,7 +357,7 @@ div#react-root .EditDocument {
    left: 0;
    right: 0;
    top: 0;
-   background-image: linear-gradient(#1F7FF0, #5CCCD6);
+   background: #0f94f6;
    z-index: 0;
    bottom: 0;
    top: 0px;
@@ -364,10 +443,7 @@ button.navbar-toggle.collapsed {
   vertical-align: top;
 }
 
-svg path,
-svg rect{
-  fill: #FFFFFF;
-}
+
 
 img.loading-icon {
     margin: 0 auto;
@@ -376,7 +452,7 @@ img.loading-icon {
 }
 
 .logo-splash {
-    background-image: linear-gradient(#1F7FF0, #5CCCD6);
+    background: #0f94f6;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -396,21 +472,28 @@ img.loading-icon {
 
 div#react-root .ViewDocument .btn-toolbar {
     margin-left: -5px;
-    position: fixed;
+    position: absolute;
     bottom: 20px;
 }
 
 div#react-root .ViewDocument a.btn.btn-default {
-    background: rgba(0, 0, 0, 0.21176470588235294);
+    background: rgba(0, 0, 0, 0.211765);
     border: 0;
     height: 60px;
     width: 60px;
     border-radius: 30px;
     padding-top: 14px;
     color: #fff;
-    left: 20px;
+    right: 10px;
     position: fixed;
-    bottom: 20px;
+    bottom: 95px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    background-color: rgba(33, 150, 243, 0.7);
 }
 
 div#react-root .ViewDocument button.text-danger.btn.btn-default {
@@ -421,23 +504,65 @@ div#react-root .ViewDocument button.text-danger.btn.btn-default {
     border-radius: 30px;
     padding-top: 14px;
     color: #fff;
-    right: 20px;
+    float: right;
     position: fixed;
+    right: 10px;
     bottom: 20px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    background-color: rgb(225, 0, 80);
+}
+
+div#react-root .ViewDocument a.text-add.btn.btn-default {
+    background: #3ddb93 !important;
+    border: 0;
+    color: #fff;
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    min-width: 0;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 60%;
+    bottom: 170px;
+
 }
 
 a.btn.btn-default svg {
     height: 25px;
 }
 
+a.btn.btn-default svg {
+  height: 20px;
+  margin-top: 18px;
+}
+
+.jobtoolbar a.btn.btn-default svg {
+    height: 36px;
+    margin-top: 10px;
+    width: 30px;
+}
+
+h4.jobstatus {
+    float: right;
+    top: -39px;
+    position: relative;
+}
+
 button.text-danger.btn.btn-default svg {
-    height: 25px;
+    height: 20px;
+    margin-top: 6px;
 }
 
 .backIcon {
     position: absolute;
     top: 25px;
     left: 30px;
+    width: 100%;
 }
 
 .backIcon a {
@@ -457,5 +582,283 @@ button.text-danger.btn.btn-default svg {
 .backIcon svg {
     color: #ffffff;
     position: absolute;
-    height: 30px;
+    height: 27px;
+    top: -9px;
+    left: -2px;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    max-height: 50px;
+}
+
+.profile-box{
+  width: 100vw;
+}
+.profile-pic {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: auto;
+    top: 70px;
+    left: 37vw;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.tech-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 120px;
+}
+
+.jobtech li {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    left: -30px;
+    position: relative;
+}
+
+h5.techName {
+    margin-left: 20px;
+    vertical-align: middle;
+    margin-top: 17px;
+    min-width: 160px;
+}
+
+h5.jobdatedetail {
+    margin-left: 20px;
+    vertical-align: middle;
+    margin-top: 17px;
+}
+
+div#react-root .ViewDocument .jobtech h4 {
+    text-align: left !important;
+    margin: 0px 0px 13px 0px;
+}
+div#react-root .ViewDocument .jobitems h4 {
+    text-align: left !important;
+    margin: 0px 0px 13px 0px;
+}
+div#react-root .ViewDocument .jobdate h4 {
+    text-align: left !important;
+    margin: 0px 0px 13px 0px;
+}
+div#react-root .ViewDocument .jobtoolbar h4 {
+    text-align: left !important;
+    margin: 0px 0px 13px 0px;
+}
+
+
+div#react-root .ViewDocument .profile-pic {
+    position: absolute;
+    height: 100px;
+    max-width: 100px;
+    border-radius: 100px;
+    margin: auto;
+    top: 90px;
+    left: 0;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    padding: 5px;
+    right: 0;
+}
+
+div#react-root .ViewDocument .page-header h4 {
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    text-align: -webkit-center;
+}
+
+div#react-root .ViewDocument .page-header {
+  top: 21vh !important;
+  min-height: 200px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+
+.pagetitle {
+  position: absolute;
+  top: -16px;
+  left: 32px;
+  font-weight: 400;
+}
+
+
+.card {
+    padding-bottom: 9px;
+    margin: 10px 0px;
+    border-bottom: 1px solid #eee;
+    background: #ffffff;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
+    top: 60px;
+    left: 15px;
+    right: 15px;
+    color: #333333;
+    min-height: 150px;
+    padding: 20px;
+}
+
+.divider {
+    border-bottom: #dcdcdc solid 1px;
+    width: 100%;
+}
+
+.jobtoolbar {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 80px;
+}
+
+
+.btn-onroute {
+  position: relative !important;
+  top: 10px;
+  margin: 0 auto;
+  background: #5eb5f9 !important;
+  background: #adb3b9 !important;
+  }
+
+.btn-startjob {
+  position: relative !important;
+  top: 10px;
+  margin: 0 auto;
+  background: #3ddb93 !important;
+  background: #adb3b9 !important;
+  }
+
+.btn-stopjob {
+  position: relative !important;
+  top: 10px;
+  margin: 0 auto;
+  background: #e10050 !important;
+  background: #adb3b9 !important;
+  }
+.btn-onroute.active {background: #5eb5f9 !important;}
+.btn-startjob.active {background: #3ddb93 !important;}
+.btn-stopjob.active {background: #e10050 !important;}
+a.btn.btn-onroute svg {color:#ffffff;}
+a.btn.btn-startjob svg {color:#ffffff;}
+a.btn.btn-stopjob svg {color:#ffffff;}
+.contact-links {
+    position: relative;
+    right: 0px;
+    top: 5px;
+    width: 75px;
+}
+.btn-message{}
+.btn-call{}
+div#react-root .ViewDocument .contact-links a.btn.btn-default {
+    border: 0;
+    padding-top: 0px;
+    color: #fff;
+    right: 10px;
+    bottom: 95px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    min-width: 0;
+    border-radius: 50%;
+    margin: 0px -3px;
+    position: initial;
+    background-color: rgba(216, 216, 216, 0.0);
+    box-shadow: none;
+    float: left;
+}
+
+div#react-root .ViewDocument .contact-links svg {
+    color: #fff;
+    fill: #32db91;
+}
+
+.jobtech li {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    left: -30px;
+    position: relative;
+    display: -webkit-inline-box;
+    min-width: 300px;
+}
+div#react-root .ViewDocument .contact-links a.btn.btn-default svg {
+    height: 19px;
+    margin-top: 11px;
+}
+
+div#react-root .Index .text-center.jumbotron {
+    position: relative;
+    min-height: 78vh;
+    margin: 0px auto;
+    padding-top: 50vw;
+}
+
+div#react-root .Index .jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: rgba(20, 126, 242, 0.7);
+}
+
+.text-center.brand-overlay.jumbotron h2 {
+    color: #fff;
+}
+div#react-root .Index .jumbotron .btn-success {
+    color: #fff;
+    background-color: rgba(92, 184, 92, 0) !important;
+    border-color: #4cae4c;
+    width: 80vw;
+    padding: 13px;
+    border: solid 2px #ffffff !important;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+
+div#react-root .Index .jumbotron #login-buttons a, .accounts-dialog a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.6em;
+}
+
+.navbar-toggle {
+    border: 0px solid transparent;
+}
+
+.card.brand-bg svg {
+    color: #ffffff !important;
+    font-size: 2em !important;
+    fill: #ffffff;
+}
+
+
+@media (min-width: 992px) {
+
+div#react-root  .container  .Signup{
+    height: 100vh;
+    max-width: 73vw;
+    color: #ffffff;
+}
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: rgba(231, 231, 231, 0.3);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #32db91;
+    border-radius: 35px;
 }

@@ -27,7 +27,7 @@ const DocumentsList = ({ documents, userName }) => (
         </ListGroupItem>
       ))}
     </ListGroup> :
-    <Alert bsStyle="warning">No credit items yet.</Alert> }
+    <Alert bsStyle="warning">No Customers yet.</Alert> }
   </div>
 );
 

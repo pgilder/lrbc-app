@@ -12,6 +12,12 @@ const PublicNavigation = () => (
       <IndexLinkContainer to="/">
         <NavItem eventKey={ 1 } href="/">Home</NavItem>
       </IndexLinkContainer>
+      <IndexLinkContainer to="/signup">
+        <NavItem eventKey={ 2 } href="/">Create An Account</NavItem>
+      </IndexLinkContainer>
+      <IndexLinkContainer to="/login">
+        <NavItem eventKey={ 3 } href="/">Login</NavItem>
+      </IndexLinkContainer>
     </Nav>
     <Nav pullRight>
       <LoginButtons />

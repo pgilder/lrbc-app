@@ -11,7 +11,7 @@ const DocumentsList = ({ documents }) => (
       </ListGroupItem>
     ))}
   </ListGroup> :
-  <Alert bsStyle="warning">No credit items yet.</Alert>
+  <Alert bsStyle="warning">No customers yet.</Alert>
 );
 
 DocumentsList.propTypes = {
