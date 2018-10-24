@@ -200,10 +200,21 @@ h5.submitDate {
     padding: 8px 14px;
 }
 
-.pool-1-bg {background-image: url(img/pool-1.jpg); height: 78vh; background-repeat: no-repeat; background-size: cover;}
-.pool-2-bg {background-image: url(img/pool-2.jpg); height: 78vh; background-repeat: no-repeat; background-size: cover;}
-.pool-3-bg {background-image: url(img/pool-3.jpg); height: 78vh; background-repeat: no-repeat; background-size: cover;}
-.pool-4-bg {background-image: url(img/pool-4.jpg); height: 78vh; background-repeat: no-repeat; background-size: cover;}
+.pool-1-bg {background-image: url(img/pool-1.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-2-bg {background-image: url(img/pool-2.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-3-bg {background-image: url(img/pool-3.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-4-bg {background-image: url(img/pool-4.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-5-bg {background-image: url(img/pool-5.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-6-bg {background-image: url(img/pool-6.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-7-bg {background-image: url(img/pool-7.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-8-bg {background-image: url(img/pool-8.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-9-bg {background-image: url(img/pool-9.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-10-bg {background-image: url(img/pool-10.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-11-bg {background-image: url(img/pool-11.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-12-bg {background-image: url(img/pool-12.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-13-bg {background-image: url(img/pool-13.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-14-bg {background-image: url(img/pool-14.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+.pool-15-bg {background-image: url(img/pool-15.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
 .brand-overlay {}
 
 /* MOBILE MENU START */
@@ -275,7 +286,7 @@ h5.submitDate {
     position: absolute;
     left: 0;
     right: 0;
-    top: 67px;
+    top: 0px;
     z-index: -1;
 }
 
@@ -805,7 +816,7 @@ div#react-root .ViewDocument .contact-links a.btn.btn-default svg {
 
 div#react-root .Index .text-center.jumbotron {
     position: relative;
-    min-height: 78vh;
+    min-height: 90vh;
     margin: 0px auto;
     padding-top: 50vw;
 }
@@ -859,7 +870,46 @@ div#react-root .Index .jumbotron #login-buttons a, .accounts-dialog a {
 ul.DocumentsList.list-group {
     padding: 0 7vw;
 }
+
 }
+
+@media screen and (max-width: 768px) {
+.navbar-default .navbar-toggle {
+    border-color: rgba(255, 255, 255, 0) !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 1px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background: rgba(0, 0, 0, 0.67);
+    width: 100vw;
+    left: 15px;
+    right: 15px;
+    position: absolute;
+    padding: 0px 40px;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
+    top: 69px;
+}
+
+.navbar-nav {
+    margin: 22.5px -15px;
+}
+
+nav .navbar-nav li.active {
+    padding: 6px 0px;
+}
+}
+
 
 @media (min-width: 992px) {
 
@@ -867,6 +917,31 @@ div#react-root  .container  .Signup{
     height: 100vh;
     max-width: 73vw;
     color: #ffffff;
+}
+
+div#react-root  .container  .Login{
+    width: 970px;
+    height: 91vh;
+    margin: 20vh auto;
+}
+
+div#react-root  .container  .Login .row {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+    background: #ffffff;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
+    color: #333333;
+    min-height: 150px;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+div#react-root  .container  .Login .page-header {
+    padding-bottom: 9px;
+    margin: 0px 0 20px;
+    border-bottom: 1px solid #eee;
 }
 
 div#react-root .Index .text-center.jumbotron {

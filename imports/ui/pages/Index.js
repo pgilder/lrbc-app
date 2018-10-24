@@ -5,7 +5,7 @@ import AllDocuments from '../containers/AllDocuments.js';
 import { LoginButtons } from 'meteor/okgrow:accounts-ui-react';
 
 const Index = () => (
-  <div className="Index pool-1-bg">
+  <div className="Index pool-11-bg">
     <Jumbotron className="text-center brand-overlay">
       <h2>Welcome to Pool App</h2>
       <LoginButtons />
