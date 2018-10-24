@@ -20,14 +20,14 @@ const PublicNavigation = () => (
       </IndexLinkContainer>
     </Nav>
     <Nav pullRight>
-      <LoginButtons />
+
     </Nav>
   </div>
 );
 
 export default PublicNavigation;
 
-
+// <LoginButtons />
 // reference http://howtocenterincss.com/#contentType=div&horizontal=center&vertical=middle&browser.IE=none
 // <div style={{'display':'flex', 'justify-content':'center', 'align-items':'center'}}>
 

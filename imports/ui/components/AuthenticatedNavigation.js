@@ -10,6 +10,7 @@ const handleLogout = () => {
   Bert.alert('Logged out', 'success');
 };
 
+
 const userName = () => {
   const user = Meteor.user();
   let name = user && user.profile ? user.profile.name : '';

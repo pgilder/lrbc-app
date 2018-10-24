@@ -831,20 +831,48 @@ div#react-root .Index .jumbotron {
 
 .text-center.brand-overlay.jumbotron h2 {
     color: #fff;
+    line-height: 1.2em;
+    font-weight: 400;
 }
+
+h3.feature-text {
+    color: #fff;
+    font-weight: 200;
+    font-size: 1em;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
 div#react-root .Index .jumbotron .btn-success {
     color: #fff;
     background-color: rgba(92, 184, 92, 0) !important;
     border-color: #4cae4c;
-    width: 80vw;
-    padding: 13px;
-    border: solid 2px #ffffff !important;
-    font-size: 0.8em;
-    margin-top: 20px;
+    width: 90vw;
+    padding: 10px 13px;
+    border: solid 1px #ffffff !important;
+    font-size: 0.7em;
+    margin-top: 6px;
     max-width: 400px;
+    letter-spacing: 0.1em;
 }
 
+div#react-root .Index .pool-icon svg {
+  color: #ffffff !important;
+      font-size: 2em !important;
+      fill: #ffffff;
+}
 
+div#react-root .Index .pool-icon {
+  border: solid rgba(255, 255, 255, 0.82) 2px;
+  padding: 10px;
+  border-radius: 43px;
+  position: relative;
+  top: 0px;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+}
 div#react-root .Index .jumbotron #login-buttons a, .accounts-dialog a {
     text-decoration: none;
     color: #fff;
