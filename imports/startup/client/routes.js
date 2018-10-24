@@ -6,10 +6,14 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Meteor } from 'meteor/meteor';
 import App from '../../ui/layouts/App.js';
 import Documents from '../../ui/pages/Documents.js';
+import Routes from '../../ui/pages/Routes.js';
 import Users from '../../ui/pages/Users.js';
 import NewDocument from '../../ui/pages/NewDocument.js';
+import NewRoute from '../../ui/pages/NewRoute.js';
 import EditDocument from '../../ui/containers/EditDocument.js';
+import EditRoute from '../../ui/containers/EditRoute.js';
 import ViewDocument from '../../ui/containers/ViewDocument.js';
+import ViewRoute from '../../ui/containers/ViewRoute.js';
 import Index from '../../ui/pages/Index.js';
 import Login from '../../ui/pages/Login.js';
 import Signup from '../../ui/pages/Signup.js';
@@ -37,6 +41,10 @@ Meteor.startup(() => {
         <Route name="newDocument" path="/documents/new" component={ NewDocument } onEnter={ authenticate } />
         <Route name="editDocument" path="/documents/:_id/edit" component={ EditDocument } onEnter={ authenticate } />
         <Route name="viewDocument" path="/documents/:_id" component={ ViewDocument } onEnter={ authenticate } />
+        <Route name="routes" path="/routes" component={ Routes } onEnter={ authenticate } />
+        <Route name="newRoute" path="/routes/new" component={ NewRoute } onEnter={ authenticate } />
+        <Route name="editRoute" path="/routes/:_id/edit" component={ EditRoute } onEnter={ authenticate } />
+        <Route name="viewRoute" path="/routes/:_id" component={ ViewRoute } onEnter={ authenticate } />
         <Route name="users" path="/users/:_id" component={ Users } />
         <Route name="recover-password" path="/recover-password" component={ RecoverPassword } />
         <Route name="reset-password" path="/reset-password/:token" component={ ResetPassword } />
@@ -47,6 +55,7 @@ Meteor.startup(() => {
       </Route>
     </Router>,
     document.getElementById('react-root')
+
   );
 });
 

@@ -857,6 +857,12 @@ div#react-root .Index .jumbotron .btn-success {
     letter-spacing: 0.1em;
 }
 
+div#react-root .Index .jumbotron .btn-success:hover {
+    background-color: rgba(80, 219, 141, 0.8) !important;
+    border: solid 0px #ffffff !important;
+}
+
+
 div#react-root .Index .pool-icon svg {
   color: #ffffff !important;
       font-size: 2em !important;
@@ -988,7 +994,32 @@ div#react-root .Index .text-center.jumbotron {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     background-color: #32db91 !important;
-    border-radius: 35px;
+    border-radius: 9px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #32db91 !important;
+    border-radius: 9px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: 0.4s;
+}
+
+a:hover {
+    background: rgba(0, 0, 0, 0.23) !important;
+    border-radius: 9px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.navbar-header a:hover {
+    background: rgba(0, 0, 0, 0) !important;
+    padding-right: 15px;
+    margin-left: 15px;
+    padding-top: 15px;
+    transition: 0.4s;
 }
 
 a.list-group-item {
