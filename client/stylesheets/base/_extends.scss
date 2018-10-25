@@ -1200,12 +1200,12 @@ ul.toolnav-left .navbar-default .navbar-nav > .active > a:focus, .navbar-default
 }
 
 li.profile-pic.dropdown {
-    position: fixed;
-    top: 14px;
-    right: -268px;
-    height: 40px;
-    width: 40px;
-    z-index: 9999999;
+  position: absolute;
+  top: 0px;
+  height: 40px;
+  z-index: 9999999;
+  width: 40px;
+  left: -210px;
 }
 
 a#basic-nav-dropdown {
