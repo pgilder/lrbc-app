@@ -15,6 +15,9 @@ import EditRoute from '../../ui/containers/EditRoute.js';
 import ViewDocument from '../../ui/containers/ViewDocument.js';
 import ViewRoute from '../../ui/containers/ViewRoute.js';
 import Index from '../../ui/pages/Index.js';
+import Features from '../../ui/pages/Features.js';
+import Pricing from '../../ui/pages/Pricing.js';
+import Tutorials from '../../ui/pages/Tutorials.js';
 import Login from '../../ui/pages/Login.js';
 import Signup from '../../ui/pages/Signup.js';
 import Test from '../../ui/pages/Test.js';
@@ -49,6 +52,9 @@ Meteor.startup(() => {
         <Route name="recover-password" path="/recover-password" component={ RecoverPassword } />
         <Route name="reset-password" path="/reset-password/:token" component={ ResetPassword } />
         <Route name="login" path="/login" component={ Login } />
+        <Route name="features" path="/features" component={ Features } />
+        <Route name="pricing" path="/pricing" component={ Pricing } />
+        <Route name="tutorials" path="/tutorials" component={ Tutorials } />
         <Route name="signup" path="/signup" component={ Signup } />
         <Route name="test" path="/test" component={ Test } />
         <Route path="*" component={ NotFound } />

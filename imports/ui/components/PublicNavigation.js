@@ -12,15 +12,24 @@ const PublicNavigation = () => (
       <IndexLinkContainer to="/">
         <NavItem eventKey={ 1 } href="/">Home</NavItem>
       </IndexLinkContainer>
-      <IndexLinkContainer to="/signup">
+      <IndexLinkContainer to="/features">
+        <NavItem eventKey={ 2 } href="/">Features</NavItem>
+      </IndexLinkContainer>
+      <IndexLinkContainer to="/pricing">
+        <NavItem eventKey={ 3 } href="/">Pricing</NavItem>
+      </IndexLinkContainer>
+      <IndexLinkContainer to="/tutorials">
+        <NavItem eventKey={ 4 } href="/">Tutorials</NavItem>
+      </IndexLinkContainer>
+
+    </Nav>
+    <Nav pullRight>
+      <IndexLinkContainer to="/signup" className="cta-border">
         <NavItem eventKey={ 2 } href="/">Create An Account</NavItem>
       </IndexLinkContainer>
       <IndexLinkContainer to="/login">
         <NavItem eventKey={ 3 } href="/">Login</NavItem>
       </IndexLinkContainer>
-    </Nav>
-    <Nav pullRight>
-
     </Nav>
   </div>
 );

@@ -14,8 +14,8 @@ export default class Signup extends React.Component {
 
   render() {
     return (
-      <div className="Signup">
-        <Row>
+      <div className="Signup pool-1-bg">
+        <Row className="remove-card">
           <Col xs={ 12 } sm={ 12 } md={ 12 }>
             <h4 className="page-header">Sign Up</h4>
             <form
