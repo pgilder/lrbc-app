@@ -25,7 +25,7 @@ const AuthenticatedNavigation = () => (
         <NavItem eventKey={ 1 } href="/">Home</NavItem>
       </IndexLinkContainer>
       <LinkContainer to="/documents">
-        <NavItem eventKey={ 2 } href="/documents">Dashboard</NavItem>
+        <NavItem eventKey={ 2 } href="/documents">Customers</NavItem>
       </LinkContainer>
       <LinkContainer to="/routes">
         <NavItem eventKey={ 3 } href="/routes">Routes</NavItem>
