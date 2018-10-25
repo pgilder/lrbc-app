@@ -979,7 +979,7 @@ nav .navbar-nav li.active {
       width: 60vw;
   }
   ul.nav.navbar-nav.navbar-right {
-      background: #32da91;
+      background: rgba(50, 218, 145, 0);
       border-radius: 60px;
       height: 40px;
       padding-left: 10px;
@@ -1151,4 +1151,66 @@ div#react-root .container .Signup h4.page-header {
     padding-bottom: 19px;
     color: black !important;
     padding-top: 10px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .toolbar-nav {
+      position: absolute;
+      background: #f1f1f1;
+      top: 70px;
+      left: 0;
+      right: 0;
+      padding-left: 88px;
+      width: 100vw;
+      padding-right: 123px;
+  }
+
+  .page-header {
+      padding-bottom: 9px;
+      margin: 40px 0 20px;
+      border-bottom: 0px solid #eee;
+      margin-top: 72px !important;
+      position: absolute;
+      left: 0;
+      right: 0;
+  }
+
+  h3.pull-left {
+      position: absolute;
+      color: #333;
+      top: -16px;
+  }
+
+ul.toolnav-left.nav.navbar-nav a {
+      color: #333 !important;
+  }
+
+ul.toolnav-left .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+      background: #333 !important;
+  }
+}
+.navbar-default .toolbar-nav > .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: rgba(50, 219, 145, 0) !important;
+}
+
+.toolbar-nav ul.nav.navbar-nav.navbar-right {
+    background: #32da91;
+}
+
+li.profile-pic.dropdown {
+    position: fixed;
+    top: 14px;
+    right: -268px;
+    height: 40px;
+    width: 40px;
+    z-index: 9999999;
+}
+
+a#basic-nav-dropdown {
+    position: absolute;
+    left: 40px;
+    width: 180px;
+    z-index: 9999999;
 }
