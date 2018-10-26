@@ -1,26 +1,26 @@
 import React from 'react';
 // import { Row, Col, Button } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
-import RoutesList from '../containers/RoutesList.js';
+import PoolroutesList from '../containers/PoolroutesList.js';
 
-const Routes = () => (
-  <div className="Routes">
+const Poolroutes = () => (
+  <div className="Poolroutes">
     <Row>
       <Col xs={ 12 }>
-        <RoutesList />
+        <PoolroutesList />
       </Col>
     </Row>
   </div>
 );
 
-export default Routes;
+export default Poolroutes;
 
 
         // <div className="page-header clearfix">
-        //   <h4 className="pull-left">My Routes</h4>
+        //   <h4 className="pull-left">My Poolroutes</h4>
         //   <Button
         //     bsStyle="success"
         //     className="pull-right"
-        //     href="/routes/new"
-        //   >New Route</Button>
+        //     href="/poolroutes/new"
+        //   >New Poolroute</Button>
         // </div>

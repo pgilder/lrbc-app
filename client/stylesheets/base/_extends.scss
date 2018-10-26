@@ -1210,13 +1210,16 @@ ul.toolnav-left.nav.navbar-nav a svg {
     margin: -5px 6px -7px 0px;
 }
 
+
 ul.toolnav-right.nav.navbar-nav a {
       color: #ffffff !important;
 }
 
 ul.toolnav-right.nav.navbar-nav a svg {
     fill: #ffffff !important;
-    margin: -5px 6px -5px 0px;
+    margin: -5px 10px -3px 0px;
+    display: -webkit-inline-box;
+    height: 16px;
 }
 ul.toolnav-left .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
       background: #333 !important;
@@ -1246,4 +1249,51 @@ a#basic-nav-dropdown {
     left: 40px;
     width: 180px;
     z-index: 9999999;
+}
+
+
+
+.Dashboard {
+    top: 120px;
+    position: absolute;
+}
+
+
+div#react-root .NewDocument {
+    top: 160px;
+    position: absolute;
+}
+
+.EditDocument {
+    top: 120px;
+    position: absolute;
+}
+
+
+.Poolroutes {
+    top: 120px;
+    position: absolute;
+}
+
+div#react-root .NewPoolroute {
+    top: 160px;
+    position: absolute;
+}
+.Pricing {
+    top: 120px;
+    position: absolute;
+}
+.Tutorials {
+    top: 120px;
+    position: absolute;
+}
+
+.Accounts {
+    top: 120px;
+    position: absolute;
+}
+
+.History {
+    top: 120px;
+    position: absolute;
 }

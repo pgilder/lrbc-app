@@ -2,10 +2,10 @@
 /* eslint-disable func-names, prefer-arrow-callback */
 
 import { assert } from 'meteor/practicalmeteor:chai';
-import Routes from './routes.js';
+import Poolroutes from './poolroute.js';
 
-describe('Routes collection', function () {
+describe('Poolroutes collection', function () {
   it('registers the collection with Mongo properly', function () {
-    assert.equal(typeof Routes, 'object');
+    assert.equal(typeof Poolroutes, 'object');
   });
 });

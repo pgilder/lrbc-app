@@ -11,26 +11,27 @@ const DocumentsList = ({ documents, userName }) => (
         href="/documents/new"
       >New Customer</Button>
     </div>
-    { documents.length > 0 ? <ListGroup className="DocumentsList">
-      {documents.map(({ _id, title, body, balance, status, createdAt }) => (
-        userName === 'My' ?
 
-        <ListGroupItem key={ _id } href={`/documents/${_id}`}>
-          <img className="avatar" src="img/avatar.jpg"></img>
-          <h5 className="agencyTitle">{ title }</h5>
-          <h5 className="agencyBody">{}</h5>
-          <h5 className="agencyBalance">{ balance }</h5>
-          <a className="pull-right btn btn-edit" href={`/documents/${_id}/edit`}>Edit</a>
-          <h5 className="agencyStatus">{ status }</h5><br/>
-          <h5 className="submitDate">{ `12 Days Ago` }</h5>
-        </ListGroupItem> :
-        <ListGroupItem key={ _id }>{ title }
-        </ListGroupItem>
+          { documents.length > 0 ? <ListGroup className="DocumentsList">
+            {documents.map(({ _id, title, body, balance, status, createdAt }) => (
+              userName === 'My' ?
+
+              <ListGroupItem key={ _id } href={`/documents/${_id}`} className="card">
+                <img className="avatar" src="img/avatar.jpg"></img>
+                <h5 className="agencyTitle">{ title }</h5>
+                <h5 className="agencyBody">{}</h5>
+                <h5 className="agencyBalance">{ balance }</h5>
+                <a className="pull-right btn btn-edit" href={`/documents/${_id}/edit`}>Edit</a>
+                <h5 className="agencyStatus">{ status }</h5><br/>
+                <h5 className="submitDate">{ `12 Days Ago` }</h5>
+              </ListGroupItem> :
+              <ListGroupItem key={ _id }>{ title }
+              </ListGroupItem>
 
 
-      ))}
-    </ListGroup> :
-    <Alert bsStyle="warning">No Customers yet.</Alert> }
+            ))}
+          </ListGroup> :
+          <Alert bsStyle="warning">No Customers yet.</Alert> }
   </div>
 );
 

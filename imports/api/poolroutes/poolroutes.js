@@ -2,61 +2,61 @@ import { Mongo } from 'meteor/mongo';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 import { Factory } from 'meteor/dburles:factory';
 
-const Routes = new Mongo.Collection('Routes');
-export default Routes;
+const Poolroutes = new Mongo.Collection('Poolroutes');
+export default Poolroutes;
 
-Routes.allow({
+Poolroutes.allow({
   insert: () => false,
   update: () => false,
   remove: () => false,
 });
 
-Routes.deny({
+Poolroutes.deny({
   insert: () => true,
   update: () => true,
   remove: () => true,
 });
 
-Routes.schema = new SimpleSchema({
-  title: {
+Poolroutes.schema = new SimpleSchema({
+  pooltitle: {
     type: String,
     label: 'The title of the credit item.',
   },
-  body: {
+  poolbody: {
     type: String,
     label: 'The body of the credit item.',
   },
-  balance: {
+  poolbalance: {
     type: String,
     label: 'The credit item balance.',
   },
-  status: {
+  poolstatus: {
     type: String,
     label: 'The credit item status.',
   },
   createdAt: {
     type: Date,
-    label: 'Date the route was created.',
+    label: 'Date the poolroute was created.',
     optional: true,
   },
   modifiedAt: {
     type: Date,
-    label: 'Date the route was modified.',
+    label: 'Date the poolroute was modified.',
   },
   ownedBy: {
     type: String,
-    label: 'User who created the route.',
+    label: 'User who created the poolroute.',
     optional: true,
   },
 });
 
-Routes.attachSchema(Routes.schema);
+Poolroutes.attachSchema(Poolroutes.schema);
 
-Factory.define('route', Routes, {
-  title: () => 'Factory Title',
-  body: () => 'Factory Body',
-  balance: () => 'Factory Balance',
-  status: () => 'Factory Status',
+Factory.define('poolroute', Poolroutes, {
+  pooltitle: () => 'Factory Title',
+  poolbody: () => 'Factory Body',
+  poolbalance: () => 'Factory Balance',
+  poolstatus: () => 'Factory Status',
   createdAt: () => 'Factory Create Date',
   modifiedAt: () => 'Factory Modify Date',
   ownedBy: () => 'Factory User Created',

@@ -2,35 +2,35 @@
 
 import React from 'react';
 import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
-import routeEditor from '../../modules/route-editor.js';
+import poolrouteEditor from '../../modules/poolroute-editor.js';
 
-export default class RouteEditor extends React.Component {
+export default class PoolrouteEditor extends React.Component {
   componentDidMount() {
-    routeEditor({ component: this });
-    setTimeout(() => { route.querySelector('[name="title"]').focus(); }, 0);
+    poolrouteEditor({ component: this });
+    setTimeout(() => { document.querySelector('[name="pooltitle"]').focus(); }, 0);
   }
 
   render() {
     const { doc } = this.props;
     return (<form
-      ref={ form => (this.routeEditorForm = form) }
+      ref={ form => (this.poolrouteEditorForm = form) }
       onSubmit={ event => event.preventDefault() }
     >
       <FormGroup>
-        <ControlLabel>Route Name</ControlLabel>
+        <ControlLabel>Poolroute Name</ControlLabel>
         <FormControl
           type="text"
-          name="title"
-          defaultValue={ doc && doc.title }
-          placeholder="Enter the Route Name"
+          name="pooltitle"
+          defaultValue={ doc && doc.pooltitle }
+          placeholder="Enter the Poolroute Name"
         />
       </FormGroup>
       <FormGroup>
         <ControlLabel>Account Number</ControlLabel>
         <FormControl
           type="text"
-          name="body"
-          defaultValue={ doc && doc.body }
+          name="poolbody"
+          defaultValue={ doc && doc.poolbody }
           placeholder="Add the account number here."
         />
       </FormGroup>
@@ -39,27 +39,27 @@ export default class RouteEditor extends React.Component {
         <ControlLabel>Current Balance</ControlLabel>
         <FormControl
           type="text"
-          name="balance"
-          defaultValue={ doc && doc.balance }
+          name="poolbalance"
+          defaultValue={ doc && doc.poolbalance }
           placeholder="$123,456"
         />
       </FormGroup>
       <FormGroup>
-        <ControlLabel>Route</ControlLabel>
+        <ControlLabel>Poolroute</ControlLabel>
         <FormControl
           type="text"
-          name="status"
-          defaultValue={ doc && doc.status }
-          placeholder="Choose a route"
+          name="poolstatus"
+          defaultValue={ doc && doc.poolstatus }
+          placeholder="Choose a poolroute"
         />
       </FormGroup>
       <Button type="submit" bsStyle="success">
-        { doc && doc._id ? 'Save Changes' : 'Add Route' }
+        { doc && doc._id ? 'Save Changes' : 'Add Poolroute' }
       </Button>
     </form>);
   }
 }
 
-RouteEditor.propTypes = {
+PoolrouteEditor.propTypes = {
   doc: React.PropTypes.object,
 };

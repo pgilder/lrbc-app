@@ -1,15 +1,15 @@
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
-import Routes from '../routes';
+import Poolroutes from '../poolroutes';
 
 const _ = require('lodash');
 
-// Meteor.publish('routes.list', function docPub() { return Routes.find({ownedBy: this.userId}) });
-Meteor.publish('routes.list', function docPub(_id) {
+// Meteor.publish('poolroutes.list', function docPub() { return Poolroutes.find({ownedBy: this.userId}) });
+Meteor.publish('poolroutes.list', function docPub(_id) {
   check(_id, String);
   // console.log('doc.list', _id);
-  // return Routes.find({ ownedBy: _id });
-  const routeCursor = Routes.find({ ownedBy: _id });
+  // return Poolroutes.find({ ownedBy: _id });
+  const poolrouteCursor = Poolroutes.find({ ownedBy: _id });
   const profileCursor = Meteor.users.find(
     {
       _id,
@@ -17,13 +17,13 @@ Meteor.publish('routes.list', function docPub(_id) {
     {
       fields: { profile: 1 },
     });
-  return [routeCursor, profileCursor];
+  return [poolrouteCursor, profileCursor];
 });
 
 // just handover raw data and modify clientside - SO way
-Meteor.publish('routes.listAll', function() {
-  const routeCursor = Routes.find({});
-  const ownerIds = routeCursor.map(function(d) {
+Meteor.publish('poolroutes.listAll', function() {
+  const poolrouteCursor = Poolroutes.find({});
+  const ownerIds = poolrouteCursor.map(function(d) {
     return d.ownedBy;
   });
   const uniqueOwnerIds = _.uniq(ownerIds);
@@ -34,18 +34,18 @@ Meteor.publish('routes.listAll', function() {
     {
       fields: { profile: 1 },
     });
-  return [routeCursor, profileCursor];
+  return [poolrouteCursor, profileCursor];
 });
 
 
-Meteor.publish('routes.view', function docPub(_id) {
+Meteor.publish('poolroutes.view', function docPub(_id) {
   check(_id, String);
-  return Routes.find({ _id, ownedBy: this.userId });
+  return Poolroutes.find({ _id, ownedBy: this.userId });
 });
 
 // // try to modify inside here - meteorchef way
-// Meteor.publish('routes.listAll', function docPub() {
-//   const cursor = Routes.find({});
+// Meteor.publish('poolroutes.listAll', function docPub() {
+//   const cursor = Poolroutes.find({});
 //   console.log('cursor',cursor);
 //   const DocsWithUserObject = cursor ? cursor.map((doc) => {
 //     const userobject = Meteor.users.findOne({ _id: doc.ownedBy });
@@ -61,8 +61,8 @@ Meteor.publish('routes.view', function docPub(_id) {
 //   return DocsWithUserObject;
 // });
 
-// Meteor.publish('routes.listAll', function docPub() {
-//    let cursor = Routes.find({});
+// Meteor.publish('poolroutes.listAll', function docPub() {
+//    let cursor = Poolroutes.find({});
 //    let DocsWithUserObject = cursor.map((doc) => {
 //      const userobject = Meteor.users.findOne({ _id: doc.ownedBy });
 //      if (userobject) {

@@ -27,8 +27,8 @@ const AuthenticatedNavigation = () => (
       <LinkContainer to="/documents">
         <NavItem eventKey={ 2 } href="/documents">Customers</NavItem>
       </LinkContainer>
-      <LinkContainer to="/routes">
-        <NavItem eventKey={ 3 } href="/routes">Routes</NavItem>
+      <LinkContainer to="/poolroutes">
+        <NavItem eventKey={ 3 } href="/poolroutes">Pool Routes</NavItem>
       </LinkContainer>
     </Nav>
     <Nav pullRight>
@@ -67,14 +67,17 @@ const AuthenticatedNavigation = () => (
 
       </Nav>
       <Nav pullRight className="toolnav-right">
-        <LinkContainer to="/settings">
-          <NavItem eventKey={ 3 } href="/settings">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="none" d="M0 0h20v20H0V0z"/><path d="M15.95 10.78c.03-.25.05-.51.05-.78s-.02-.53-.06-.78l1.69-1.32c.15-.12.19-.34.1-.51l-1.6-2.77c-.1-.18-.31-.24-.49-.18l-1.99.8c-.42-.32-.86-.58-1.35-.78L12 2.34c-.03-.2-.2-.34-.4-.34H8.4c-.2 0-.36.14-.39.34l-.3 2.12c-.49.2-.94.47-1.35.78l-1.99-.8c-.18-.07-.39 0-.49.18l-1.6 2.77c-.1.18-.06.39.1.51l1.69 1.32c-.04.25-.07.52-.07.78s.02.53.06.78L2.37 12.1c-.15.12-.19.34-.1.51l1.6 2.77c.1.18.31.24.49.18l1.99-.8c.42.32.86.58 1.35.78l.3 2.12c.04.2.2.34.4.34h3.2c.2 0 .37-.14.39-.34l.3-2.12c.49-.2.94-.47 1.35-.78l1.99.8c.18.07.39 0 .49-.18l1.6-2.77c.1-.18.06-.39-.1-.51l-1.67-1.32zM10 13c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/></svg>
-            Settings
+        <LinkContainer to="/documents/new">
+          <NavItem eventKey={ 3 } href="/documents/new">
+            <svg aria-hidden="true" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+            Add Customer
           </NavItem>
         </LinkContainer>
-        <LinkContainer to="/admin">
-          <NavItem eventKey={ 3 } href="/admin">Admin</NavItem>
+        <LinkContainer to="/poolroutes/new">
+          <NavItem eventKey={ 3 } href="/poolroutes/new">
+            <svg aria-hidden="true" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+            Add Pool
+            </NavItem>
         </LinkContainer>
       </Nav>
     </div>
