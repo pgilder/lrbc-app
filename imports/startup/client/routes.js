@@ -18,6 +18,10 @@ import Index from '../../ui/pages/Index.js';
 import Features from '../../ui/pages/Features.js';
 import Pricing from '../../ui/pages/Pricing.js';
 import Tutorials from '../../ui/pages/Tutorials.js';
+import Dashboard from '../../ui/pages/Dashboard.js';
+import Accounts from '../../ui/pages/Accounts.js';
+import History from '../../ui/pages/History.js';
+import Settings from '../../ui/pages/Settings.js';
 import Login from '../../ui/pages/Login.js';
 import Signup from '../../ui/pages/Signup.js';
 import Test from '../../ui/pages/Test.js';
@@ -55,6 +59,10 @@ Meteor.startup(() => {
         <Route name="features" path="/features" component={ Features } />
         <Route name="pricing" path="/pricing" component={ Pricing } />
         <Route name="tutorials" path="/tutorials" component={ Tutorials } />
+        <Route name="dashboard" path="/dashboard" component={ Dashboard } />
+        <Route name="accounts" path="/accounts" component={ Accounts } />
+        <Route name="history" path="/history" component={ History } />
+        <Route name="settings" path="/settings" component={ Settings } />
         <Route name="signup" path="/signup" component={ Signup } />
         <Route name="test" path="/test" component={ Test } />
         <Route path="*" component={ NotFound } />
