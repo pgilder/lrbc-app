@@ -9,7 +9,7 @@ Meteor.publish('poolroutes.list', function docPub(_id) {
   check(_id, String);
   // console.log('doc.list', _id);
   // return Poolroutes.find({ ownedBy: _id });
-  const poolrouteCursor = Poolroutes.find({ ownedBy: _id });
+  const documentCursor = Poolroutes.find({ ownedBy: _id });
   const profileCursor = Meteor.users.find(
     {
       _id,
@@ -17,13 +17,13 @@ Meteor.publish('poolroutes.list', function docPub(_id) {
     {
       fields: { profile: 1 },
     });
-  return [poolrouteCursor, profileCursor];
+  return [documentCursor, profileCursor];
 });
 
 // just handover raw data and modify clientside - SO way
 Meteor.publish('poolroutes.listAll', function() {
-  const poolrouteCursor = Poolroutes.find({});
-  const ownerIds = poolrouteCursor.map(function(d) {
+  const documentCursor = Poolroutes.find({});
+  const ownerIds = documentCursor.map(function(d) {
     return d.ownedBy;
   });
   const uniqueOwnerIds = _.uniq(ownerIds);
@@ -34,7 +34,7 @@ Meteor.publish('poolroutes.listAll', function() {
     {
       fields: { profile: 1 },
     });
-  return [poolrouteCursor, profileCursor];
+  return [documentCursor, profileCursor];
 });
 
 

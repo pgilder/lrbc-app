@@ -44,7 +44,7 @@ Meteor.publish('documents.view', function docPub(_id) {
 });
 
 // // try to modify inside here - meteorchef way
-// Meteor.publish('documents.listAll', function docPub() { 
+// Meteor.publish('documents.listAll', function docPub() {
 //   const cursor = Documents.find({});
 //   console.log('cursor',cursor);
 //   const DocsWithUserObject = cursor ? cursor.map((doc) => {
@@ -61,7 +61,7 @@ Meteor.publish('documents.view', function docPub(_id) {
 //   return DocsWithUserObject;
 // });
 
-// Meteor.publish('documents.listAll', function docPub() { 
+// Meteor.publish('documents.listAll', function docPub() {
 //    let cursor = Documents.find({});
 //    let DocsWithUserObject = cursor.map((doc) => {
 //      const userobject = Meteor.users.findOne({ _id: doc.ownedBy });
@@ -70,6 +70,6 @@ Meteor.publish('documents.view', function docPub(_id) {
 //        return doc
 //      }
 //    });
-//    console.log('DocsWithUserObject',DocsWithUserObject); 
+//    console.log('DocsWithUserObject',DocsWithUserObject);
 //   return DocsWithUserObject;
 // })

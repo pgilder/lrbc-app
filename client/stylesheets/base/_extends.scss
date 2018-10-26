@@ -1260,8 +1260,16 @@ a#basic-nav-dropdown {
 
 
 div#react-root .NewDocument {
-    top: 160px;
+    top: 180px;
     position: absolute;
+    background: none;
+    padding: 30px;
+    color: #333;
+}
+
+div#react-root .NewDocument h4.page-header {
+  top: -120px;
+  left: 15px;
 }
 
 .EditDocument {
@@ -1276,9 +1284,16 @@ div#react-root .NewDocument {
 }
 
 div#react-root .NewPoolroute {
-    top: 160px;
+    top: 180px;
     position: absolute;
+    width: 88vw;
 }
+
+div#react-root .NewPoolroute h4.page-header {
+    top: -120px;
+    left: -20px;
+}
+
 .Pricing {
     top: 120px;
     position: absolute;
@@ -1297,3 +1312,75 @@ div#react-root .NewPoolroute {
     top: 120px;
     position: absolute;
 }
+
+/* Profile Image and Text Start */
+.nav>li>a>img {
+    max-width: none;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: auto;
+    left: -44px;
+}
+
+a#basic-nav-dropdown {
+    position: absolute;
+    left: -130px;
+    width: 180px;
+    z-index: 9999999;
+}
+
+li.profile-pic.dropdown {
+    position: absolute;
+    top: 0px;
+    height: 40px;
+    z-index: 9999999;
+    width: 40px;
+    left: -34px;
+}
+/* Profile Image and Text End */
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 8px 20px !important;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.pad-top-10 {padding-top: 10px;}
+.pad-top-15 {padding-top: 15px;}
+.pad-top-20 {padding-top: 20px;}
+
+.btn-logout {
+    background: #FFC107;
+    margin-bottom: -5px;
+    border-radius: 0px 0px 3px 3px;
+    left: 0;
+    margin-right: -0.2px;
+}
+
+.dropdown-menu > li.btn-logout > a {
+    border-radius: 0px 0px 3px 3px;
+    color: #fff;
+    display: flex;
+    padding-left: 35px;
+}
+
+.dropdown-menu > li.btn-logout > a:hover {
+    border-radius: 0px 0px 3px 3px;
+    color: #fff;
+    display: flex;
+    padding-left: 35px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background: #ec4848 !important;
+}
+
+
+
+.dropdown-menu > li.btn-logout > a svg { fill: #fff; margin-right: 5px; height: 20px;}
+label.control-label {font-size: 1rem; color: #696969;}
