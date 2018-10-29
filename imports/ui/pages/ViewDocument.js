@@ -3,6 +3,7 @@ import { ButtonToolbar, ButtonGroup, Button } from 'react-bootstrap';
 import { browserHistory } from 'react-router';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { removeDocument } from '../../api/documents/methods.js';
+import { Row, Col } from 'react-bootstrap';
 
 
 const handleRemove = (_id) => {
@@ -44,62 +45,77 @@ const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist
       </a>
       <h4 className="pagetitle">{ doc.title } Profile</h4>
     </div>
-    <div className="page-header clearfix">
-      <div className="profile-box">
-        <img className="profile-pic" src="/img/avatar.jpg"></img>
-      </div>
-      <h4 className="pull-left">{ doc.title }</h4>
-      <div className="ItemBody">{ doc.body }</div>
-      <div className="ItemBalance">{ doc.balance }</div>
-      <ButtonToolbar className="pull-right">
-        <ButtonGroup bsSize="small">
-          <Button href={`/documents/${doc._id}/edit`}>
-            <svg aria-hidden="true" data-prefix="fas" data-icon="pencil-alt" class="svg-inline--fa fa-pencil-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg>
-          </Button>
-          <Button onClick={ () => handleRemove(doc._id) } className="text-danger">
-            <svg aria-hidden="true" data-prefix="fas" data-icon="trash-alt" class="svg-inline--fa fa-trash-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272  68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"></path></svg>
-          </Button>
-          <Button className="text-add" href={`/documents/new`}>
-            <svg aria-hidden="true" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
-          </Button>
-        </ButtonGroup>
-      </ButtonToolbar>
-    </div>
+    <Row>
+      <Col sm={ 3 }>
+        <div className="page-header clearfix">
+          <div className="profile-box">
+            <img className="profile-pic" src="/img/avatar.jpg"></img>
+          </div>
+          <h4 className="pull-left">{ doc.title }</h4>
+          <div className="ItemBody">{ doc.body }</div>
+          <div className="ItemBalance">{ doc.balance }</div>
+          <ButtonToolbar className="pull-right">
+            <ButtonGroup bsSize="small">
+              <Button href={`/documents/${doc._id}/edit`}>
+                <svg aria-hidden="true" data-prefix="fas" data-icon="pencil-alt" class="svg-inline--fa fa-pencil-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg>
+              </Button>
+              <Button onClick={ () => handleRemove(doc._id) } className="text-danger">
+                <svg aria-hidden="true" data-prefix="fas" data-icon="trash-alt" class="svg-inline--fa fa-trash-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 84V56c0-13.3 10.7-24 24-24h112l9.4-18.7c4-8.2 12.3-13.3 21.4-13.3h114.3c9.1 0 17.4 5.1 21.5 13.3L312 32h112c13.3 0 24 10.7 24 24v28c0 6.6-5.4 12-12 12H12C5.4 96 0 90.6 0 84zm416 56v324c0 26.5-21.5 48-48 48H80c-26.5 0-48-21.5-48-48V140c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12zm-272  68c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208zm96 0c0-8.8-7.2-16-16-16s-16 7.2-16 16v224c0 8.8 7.2 16 16 16s16-7.2 16-16V208z"></path></svg>
+              </Button>
+              <Button className="text-add" href={`/documents/new`}>
+                <svg aria-hidden="true" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+              </Button>
+            </ButtonGroup>
+          </ButtonToolbar>
+        </div>
+      </Col>
+      <Col sm={ 3 }>
+        <div className="card">
 
-    <div className="card">
-      <h4>Job Description</h4>
-      <div className="divider"></div>
-      <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-      <div className="divider"></div>
-    </div>
-    <div className="card brand-bg">
-      <h4>Toolbar</h4>
-      <h4 className="jobstatus">In Route</h4>
-      <div className="divider"></div>
-      <div className="jobtoolbar">
-        <Button className="btn-onroute active" href={`#`}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-        </Button>
-        <Button className="btn-startjob" href={`#`}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-        </Button>
-        <Button className="btn-stopjob" href={`#`}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
-        </Button>
-      </div>
-    <div className="divider"></div>
-    </div>
-    <div className="card">
-      <h4>When: { doc.status }</h4>
-      <div className="divider"></div>
-      <div className="jobdate">
-        <h5 className="jobdatedetail">{ doc.createdAt.toLocaleString() }<br/></h5>
-        <h5 className="jobdatedetail"><b>Thur Dec 4</b>   1-00p - 3:00p<br/></h5>
-        <h5 className="jobdatedetail"><b>Thur Jan 2</b>   2-00p - 4:00p<br/></h5>
+          <h4>Job Description</h4>
+          <div className="divider"></div>
+          <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div className="divider"></div>
+        </div>
+      </Col>
+      <Col sm={ 3 }>
+        <div className="card brand-bg">
+          <h4>Toolbar</h4>
+          <h4 className="jobstatus">In Route</h4>
+          <div className="divider"></div>
+          <div className="jobtoolbar">
+            <Button className="btn-onroute active" href={`#`}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+            </Button>
+            <Button className="btn-startjob" href={`#`}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+            </Button>
+            <Button className="btn-stopjob" href={`#`}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 6h12v12H6z"/></svg>
+            </Button>
+          </div>
+        <div className="divider"></div>
+        </div>
+      </Col>
+      <Col sm={ 3 }>
+        <div className="card">
+          <h4>When: { doc.status }</h4>
+          <div className="divider"></div>
+          <div className="jobdate">
+            <h5 className="jobdatedetail">{ doc.createdAt.toLocaleString() }<br/></h5>
+            <h5 className="jobdatedetail"><b>Thur Dec 4</b>   1-00p - 3:00p<br/></h5>
+            <h5 className="jobdatedetail"><b>Thur Jan 2</b>   2-00p - 4:00p<br/></h5>
 
-      </div>
-      <div className="divider"></div>
-    </div>
+          </div>
+          <div className="divider"></div>
+        </div>
+      </Col>
+    </Row>
+
+
+
+
+
     <div className="card">
       <div className="jobtech">
         <h4>Who</h4>
@@ -180,6 +196,8 @@ const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist
         <br/><br/>
       <div className="divider"></div>
     </div>
+
+
 
   </div>
 );
