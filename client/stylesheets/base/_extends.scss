@@ -1398,3 +1398,39 @@ label.control-label {font-size: 1rem; color: #696969;}
     background: black;
 }
 */
+
+/* MOBILE MENU START */
+@media (min-width: 961px) {
+.toolbar-nav ul.nav.navbar-nav.navbar-right {
+    background: #32da91 !important;
+}
+}
+
+@media (max-width: 960px) {
+svg {
+    display: -webkit-inline-box;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.toolbar-nav ul.nav.navbar-nav.navbar-right {
+    background: rgba(50, 218, 145, .7) !important;
+}
+}
+
+
+/* MOBILE MENU END */
+
+
+.alert-warning {
+    color: #c38529;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    position: fixed;
+    bottom: 0vh;
+    margin: 2vw auto !important;
+    font-weight: bold;
+    left: 10vw;
+    right: 10vw;
+    width: 78vw !important;
+}
