@@ -1,9 +1,9 @@
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 import { ValidatedMethod } from 'meteor/mdg:validated-method';
-import Poolroutes from './poolroutes';
+import Documents from './poolroutes';
 import rateLimit from '../../modules/rate-limit.js';
 
-export const upsertPoolroute = new ValidatedMethod({
+export const upsertDocument = new ValidatedMethod({
   name: 'poolroutes.upsert',
   validate: new SimpleSchema({
     _id: { type: String, optional: true },
@@ -12,19 +12,19 @@ export const upsertPoolroute = new ValidatedMethod({
     poolbalance: { type: String, optional: true },
     poolstatus: { type: String, optional: true },
   }).validator(),
-  run(poolroute) {
-    if (poolroute._id) {
-      poolroute.modifiedAt = new Date();
+  run(document) {
+    if (document._id) {
+      document.modifiedAt = new Date();
     } else {
-      poolroute.createdAt = new Date();
-      poolroute.modifiedAt = poolroute.createdAt;
-      poolroute.ownedBy = Meteor.user()._id;
+      document.createdAt = new Date();
+      document.modifiedAt = document.createdAt;
+      document.ownedBy = Meteor.user()._id;
     }
-    return Poolroutes.upsert({ _id: poolroute._id }, { $set: poolroute });
+    return Documents.upsert({ _id: document._id }, { $set: document });
   },
 });
 
-export const removePoolroute = new ValidatedMethod({
+export const removeDocument = new ValidatedMethod({
   name: 'poolroutes.remove',
   validate: new SimpleSchema({
     _id: { type: String },
@@ -36,8 +36,8 @@ export const removePoolroute = new ValidatedMethod({
 
 rateLimit({
   methods: [
-    upsertPoolroute,
-    removePoolroute,
+    upsertDocument,
+    removeDocument,
   ],
   limit: 5,
   timeRange: 1000,

@@ -18,7 +18,7 @@ Meteor.publish('documents.list', function docPub(_id) {
       fields: { profile: 1 },
     });
   return [documentCursor, profileCursor];
-});
+}); 
 
 // just handover raw data and modify clientside - SO way
 Meteor.publish('documents.listAll', function() {

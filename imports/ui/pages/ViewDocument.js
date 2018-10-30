@@ -42,11 +42,12 @@ const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist
     <div className="backIcon">
       <a href="/">
         <svg aria-hidden="true" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
-      </a>
-      <h4 className="pagetitle">{ doc.title } Profile</h4>
+        <h4 className="pagetitle">{ doc.title } Profile</h4>
+    </a>
+
     </div>
     <Row>
-      <Col sm={ 3 }>
+      <Col sm={ 4 }>
         <div className="page-header clearfix">
           <div className="profile-box">
             <img className="profile-pic" src="/img/avatar.jpg"></img>
@@ -69,7 +70,7 @@ const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist
           </ButtonToolbar>
         </div>
       </Col>
-      <Col sm={ 3 }>
+      <Col sm={ 4 }>
         <div className="card">
 
           <h4>Job Description</h4>
@@ -78,7 +79,7 @@ const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist
           <div className="divider"></div>
         </div>
       </Col>
-      <Col sm={ 3 }>
+      <Col sm={ 4 }>
         <div className="card brand-bg">
           <h4>Toolbar</h4>
           <h4 className="jobstatus">In Route</h4>
@@ -97,7 +98,7 @@ const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist
         <div className="divider"></div>
         </div>
       </Col>
-      <Col sm={ 3 }>
+      <Col sm={ 4 }>
         <div className="card">
           <h4>When: { doc.status }</h4>
           <div className="divider"></div>

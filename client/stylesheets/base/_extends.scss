@@ -726,7 +726,6 @@ div#react-root .ViewDocument .page-header {
   position: initial;
 }
 
-
 .pagetitle {
   position: absolute;
   top: -16px;
@@ -1172,6 +1171,19 @@ div#react-root .container .Signup h4.page-header {
 }
 
 
+div#react-root .ViewDocument {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #0f94f6;
+    z-index: 0;
+    bottom: 0;
+    top: 60px;
+    z-index: -1;
+    padding: 58px 30px 30px 30px;
+    color: #ffffff;
+}
 
 @media screen and (min-width: 768px) {
   .toolbar-nav {
@@ -1224,7 +1236,32 @@ ul.toolnav-right.nav.navbar-nav a svg {
 ul.toolnav-left .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
       background: #333 !important;
 
-  }
+}
+
+div#react-root .ViewDocument {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #0f94f6;
+    z-index: 0;
+    bottom: 0;
+    top: 110px;
+    z-index: -1;
+    padding: 45px 30px 30px 30px;
+    color: #ffffff;
+}
+
+
+div#react-root .ViewDocument .page-header {
+    top: -8.3vh !important;
+    min-height: 281px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
+    color: #333;
+    position: inherit;
+}
 }
 .navbar-default .toolbar-nav > .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     background-color: rgba(113, 113, 113, 0.21) !important;

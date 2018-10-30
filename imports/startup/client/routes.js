@@ -48,7 +48,7 @@ Meteor.startup(() => {
         <Route name="newDocument" path="/documents/new" component={ NewDocument } onEnter={ authenticate } />
         <Route name="editDocument" path="/documents/:_id/edit" component={ EditDocument } onEnter={ authenticate } />
         <Route name="viewDocument" path="/documents/:_id" component={ ViewDocument } onEnter={ authenticate } />
-        <Route name="poolroutes" path="/poolroutes" component={ Poolroutes } onEnter={ authenticate } />
+        <Route name="poolroutes" path="/poolroutes" onEnter={ authenticate } />
         <Route name="newPoolroute" path="/poolroutes/new" component={ NewPoolroute } onEnter={ authenticate } />
         <Route name="editPoolroute" path="/poolroutes/:_id/edit" component={ EditPoolroute } onEnter={ authenticate } />
         <Route name="viewPoolroute" path="/poolroutes/:_id" component={ ViewPoolroute } onEnter={ authenticate } />

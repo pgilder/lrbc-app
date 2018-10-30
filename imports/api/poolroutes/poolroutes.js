@@ -20,19 +20,19 @@ Poolroutes.deny({
 Poolroutes.schema = new SimpleSchema({
   pooltitle: {
     type: String,
-    label: 'The title of the credit item.',
+    label: 'The title of the pool item.',
   },
   poolbody: {
     type: String,
-    label: 'The body of the credit item.',
+    label: 'The body of the pool item.',
   },
   poolbalance: {
     type: String,
-    label: 'The credit item balance.',
+    label: 'The pool item balance.',
   },
   poolstatus: {
     type: String,
-    label: 'The credit item status.',
+    label: 'The pool item status.',
   },
   createdAt: {
     type: Date,
