@@ -53,6 +53,34 @@ export default class DocumentEditor extends React.Component {
           placeholder="Choose a route"
         />
       </FormGroup>
+      <FormGroup>
+        <ControlLabel>Company</ControlLabel>
+        <FormControl
+          type="text"
+          name="company"
+          defaultValue={ doc && doc.company }
+          placeholder="ABC Company"
+        />
+      </FormGroup>
+      <FormGroup>
+        <ControlLabel>Phone Number</ControlLabel>
+        <FormControl
+          type="text"
+          name="phone1"
+          defaultValue={ doc && doc.phone1 }
+          placeholder="480-123-4567"
+        />
+      </FormGroup>
+      <FormGroup>
+        <ControlLabel>Alternative Number</ControlLabel>
+        <FormControl
+          type="text"
+          name="phone2"
+          defaultValue={ doc && doc.phone2 }
+          placeholder="480-123-4567"
+        />
+      </FormGroup>
+
       <Button type="submit" bsStyle="success">
         { doc && doc._id ? 'Save Changes' : 'Add Customer' }
       </Button>

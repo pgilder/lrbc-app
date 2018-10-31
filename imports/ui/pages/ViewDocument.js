@@ -54,7 +54,19 @@ const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist
           </div>
           <h4 className="pull-left">{ doc.title }</h4>
           <div className="ItemBody">{ doc.body }</div>
-          <div className="ItemBalance">{ doc.balance }</div>
+
+          <div className="ItemCompany">
+            <div>Company:</div>
+            { doc.company }
+          </div>
+          <div className="ItemPhone1">
+            <div>Phone:</div>
+            { doc.phone1 }
+          </div>
+          <div className="ItemPhone2">
+            <div>Alternative Phone:</div>
+            { doc.phone2 }
+          </div>
           <ButtonToolbar className="pull-right">
             <ButtonGroup bsSize="small">
               <Button href={`/documents/${doc._id}/edit`}>
@@ -73,7 +85,7 @@ const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist
       <Col sm={ 4 }>
         <div className="card">
 
-          <h4>Job Description</h4>
+          <h4>Balance: <div className="ItemBalance">{ doc.balance }</div></h4>
           <div className="divider"></div>
           <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
           <div className="divider"></div>

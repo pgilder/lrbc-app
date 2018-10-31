@@ -34,6 +34,19 @@ Documents.schema = new SimpleSchema({
     type: String,
     label: 'The credit item status.',
   },
+  company: {
+    type: String,
+    label: 'The company name.',
+  },
+  phone1: {
+    type: String,
+    label: 'The Phone Number.',
+  },
+  phone2: {
+    type: String,
+    label: 'The Alternative Number.',
+  },
+
   createdAt: {
     type: Date,
     label: 'Date the document was created.',
@@ -57,6 +70,9 @@ Factory.define('document', Documents, {
   body: () => 'Factory Body',
   balance: () => 'Factory Balance',
   status: () => 'Factory Status',
+  company: () => 'Factory Company',
+  phone1: () => 'Factory Phone 1',
+  phone2: () => 'Factory Phone 2',
   createdAt: () => 'Factory Create Date',
   modifiedAt: () => 'Factory Modify Date',
   ownedBy: () => 'Factory User Created',

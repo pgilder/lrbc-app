@@ -15,6 +15,9 @@ const handleUpsert = () => {
     body: document.querySelector('[name="body"]').value.trim(),
     balance: document.querySelector('[name="balance"]').value.trim(),
     status: document.querySelector('[name="status"]').value.trim(),
+    company: document.querySelector('[name="company"]').value.trim(),
+    phone1: document.querySelector('[name="phone1"]').value.trim(),
+    phone2: document.querySelector('[name="phone2"]').value.trim(),
   };
 
   if (doc && doc._id) upsert._id = doc._id;
@@ -45,6 +48,15 @@ const validate = () => {
       status: {
         required: true,
       },
+      company: {
+        required: true,
+      },
+      phone1: {
+        required: true,
+      },
+      phone2: {
+        required: true,
+      },
     },
     messages: {
       title: {
@@ -57,6 +69,15 @@ const validate = () => {
         required: 'This needs a balance, please.',
       },
       status: {
+        required: 'What is this items status.',
+      },
+      company: {
+        required: 'What is this items status.',
+      },
+      phone1: {
+        required: 'What is this items status.',
+      },
+      phone2: {
         required: 'What is this items status.',
       },
     },

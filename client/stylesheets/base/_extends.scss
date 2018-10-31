@@ -182,6 +182,7 @@ img.avatar {
     width: 50px;
     border-radius: 50px;
     margin-top: 9px;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0,0,0,.1);
 }
 
 h5.submitDate {
@@ -700,11 +701,11 @@ div#react-root .ViewDocument .jobtoolbar h4 {
 
 div#react-root .ViewDocument .profile-pic {
     position: absolute;
-    height: 100px;
-    max-width: 100px;
+    height: 80px;
+    max-width: 80px;
     border-radius: 100px;
     margin: auto;
-    top: 90px;
+    top: 20px;
     left: 0;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
     width: 100%;
@@ -713,7 +714,7 @@ div#react-root .ViewDocument .profile-pic {
 }
 
 div#react-root .ViewDocument .page-header h4 {
-    margin-top: 60px;
+    margin-top: 90px;
     width: 100%;
     position: relative;
     text-align: -webkit-center;
@@ -1092,7 +1093,18 @@ a.list-group-item {
     border-radius: 0px;
     box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
     border-bottom: 1px #eaeaea solid;
+
+}
+
+a.list-group-item .itemstatus {
     border-left: solid 8px #46DA95;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    top: 0;
+    bottom: 0px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 @media (min-width: 429px) and (max-width: 830px) {
@@ -1144,6 +1156,12 @@ h5.submitDate {
     position: absolute;
     top: 120px;
     padding-bottom: 20px;
+    margin: 6% 6% 6% 3%;
+}
+
+.DocumentsList a.card.list-group-item {
+    margin: 3px -4px 20px;
+    height: 160px;
 }
 
 
@@ -1475,4 +1493,36 @@ svg {
     left: 10vw;
     right: 10vw;
     width: 78vw !important;
+}
+
+.techlist {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 67%;
+    height: 44px;
+    padding-top: 6px;
+}
+
+.techlist ul {
+    margin-left: -22px;
+    position: absolute;
+    display: flex;
+}
+
+.techlist li {
+list-style-type: none;
+margin-right: 5px;
+}
+
+img.techpic {
+    height: 30px;
+    border-radius: 20px;
+    border: rgba(255, 255, 255, 0) solid 1px;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0,0,0,.1);
+}
+
+.ItemBalance {
+    float: right;
+    color: #50db8d;
 }

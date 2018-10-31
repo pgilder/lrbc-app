@@ -10,6 +10,9 @@ export const upsertDocument = new ValidatedMethod({
     title: { type: String, optional: true },
     body: { type: String, optional: true },
     balance: { type: String, optional: true },
+    company: { type: String, optional: true },
+    phone1: { type: String, optional: true },
+    phone2: { type: String, optional: true },
     status: { type: String, optional: true },
   }).validator(),
   run(document) {

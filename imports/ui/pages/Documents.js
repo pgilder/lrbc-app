@@ -5,11 +5,7 @@ import DocumentsList from '../containers/DocumentsList.js';
 
 const Documents = () => (
   <div className="Documents">
-    <Row>
-      <Col xs={ 12 }>
-        <DocumentsList />
-      </Col>
-    </Row>
+      <DocumentsList />
   </div>
 );
 
