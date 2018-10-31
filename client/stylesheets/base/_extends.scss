@@ -513,6 +513,7 @@ div#react-root .ViewDocument .btn-toolbar {
     margin-left: -5px;
     position: absolute;
     bottom: 20px;
+    z-index: 9999999;
 }
 
 div#react-root .ViewDocument a.btn.btn-default {
@@ -578,6 +579,7 @@ a.btn.btn-default svg {
 a.btn.btn-default svg {
   height: 20px;
   margin-top: 18px;
+  // margin-left: 10px;
 }
 
 .jobtoolbar a.btn.btn-default svg {
@@ -595,6 +597,7 @@ h4.jobstatus {
 button.text-danger.btn.btn-default svg {
     height: 20px;
     margin-top: 6px;
+    // margin-left: 10px;
 }
 
 .backIcon {
@@ -746,6 +749,7 @@ div#react-root .ViewDocument .page-header {
     color: #333333;
     min-height: 150px;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .divider {
@@ -1261,6 +1265,7 @@ div#react-root .ViewDocument .page-header {
     box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
     color: #333;
     position: inherit;
+    border-radius: 10px;
 }
 }
 .navbar-default .toolbar-nav > .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
@@ -1447,7 +1452,7 @@ label.control-label {font-size: 1rem; color: #696969;}
 svg {
     display: -webkit-inline-box;
     height: 12px;
-    margin-right: 10px;
+    // margin-right: 10px;
 }
 
 .toolbar-nav ul.nav.navbar-nav.navbar-right {

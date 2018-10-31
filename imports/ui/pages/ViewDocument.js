@@ -112,92 +112,93 @@ const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist
         </div>
       </Col>
     </Row>
-
-
-
-
-
-    <div className="card">
-      <div className="jobtech">
-        <h4>Who</h4>
-        <div className="divider"></div>
-        <ul>
-          <li>
-            <img className="tech-pic" src="/img/avatar.jpg"></img>
-              <h5 className="techName">Jackson Stugart</h5>
-              <div className="contact-links">
-                <Button className="btn-call" href={`#`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
-                </Button>
-                <Button className="btn-message" href={`#`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-                </Button>
-              </div>
-          </li>
-          <li>
-            <img className="tech-pic" src="/img/avatar.jpg"></img>
-              <h5 className="techName">John Stugart</h5>
-                <div className="contact-links">
-                  <Button className="btn-call" href={`#`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
-                  </Button>
-                  <Button className="btn-message" href={`#`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-                  </Button>
-                </div>
-          </li>
-          <li>
-            <img className="tech-pic" src="/img/avatar.jpg"></img>
-              <h5 className="techName">Jennifer Stugart</h5>
-                <div className="contact-links">
-                  <Button className="btn-call" href={`#`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
-                  </Button>
-                  <Button className="btn-message" href={`#`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-                  </Button>
-                </div>
-          </li>
-        </ul>
-        <div className="divider"></div>
-      </div>
-    </div>
-    <div className="card">
-      <div className="jobitems">
-        <h4>Job Items</h4>
-        <div className="divider"></div>
-        <ol>
-          <li>
-            <h5 className="jobitemtitle">Install Water Pump</h5>
-            <p className="jobitemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-          </li>
-          <li>
-            <h5 className="jobitemtitle">Drain Swimming Pool</h5>
-            <p className="jobitemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-          </li>
-          <li>
-            <h5 className="jobitemtitle">Add Extra Tabs</h5>
-            <p className="jobitemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-          </li>
-          <li>
-            <h5 className="jobitemtitle">Flush Drain SYstem</h5>
-            <p className="jobitemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-          </li>
-        </ol>
-        <div className="divider"></div>
-      </div>
-    </div>
-
-    <div className="card">
-      <h4>History</h4>
-      <div className="divider"></div>
-        <b>Created:</b> { doc.createdAt.toLocaleString() }
-        <br/>
-        <b>Modified:</b> { doc.modifiedAt.toLocaleString() }
-        <br/><br/>
-      <div className="divider"></div>
-    </div>
-
+    <Row>
+      <Col sm={ 5 }>
+        <div className="card">
+          <div className="jobtech">
+            <h4>Who</h4>
+            <div className="divider"></div>
+            <ul>
+              <li>
+                <img className="tech-pic" src="/img/avatar.jpg"></img>
+                  <h5 className="techName">Jackson Stugart</h5>
+                  <div className="contact-links">
+                    <Button className="btn-call" href={`#`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                    </Button>
+                    <Button className="btn-message" href={`#`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                    </Button>
+                  </div>
+              </li>
+              <li>
+                <img className="tech-pic" src="/img/avatar.jpg"></img>
+                  <h5 className="techName">John Stugart</h5>
+                    <div className="contact-links">
+                      <Button className="btn-call" href={`#`}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                      </Button>
+                      <Button className="btn-message" href={`#`}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                      </Button>
+                    </div>
+              </li>
+              <li>
+                <img className="tech-pic" src="/img/avatar.jpg"></img>
+                  <h5 className="techName">Jennifer Stugart</h5>
+                    <div className="contact-links">
+                      <Button className="btn-call" href={`#`}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                      </Button>
+                      <Button className="btn-message" href={`#`}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                      </Button>
+                    </div>
+              </li>
+            </ul>
+            <div className="divider"></div>
+          </div>
+        </div>
+      </Col>
+      <Col sm={ 4 }>
+        <div className="card">
+          <div className="jobitems">
+            <h4>Job Items</h4>
+            <div className="divider"></div>
+            <ol>
+              <li>
+                <h5 className="jobitemtitle">Install Water Pump</h5>
+                <p className="jobitemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+              </li>
+              <li>
+                <h5 className="jobitemtitle">Drain Swimming Pool</h5>
+                <p className="jobitemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+              </li>
+              <li>
+                <h5 className="jobitemtitle">Add Extra Tabs</h5>
+                <p className="jobitemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+              </li>
+              <li>
+                <h5 className="jobitemtitle">Flush Drain SYstem</h5>
+                <p className="jobitemdescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+              </li>
+            </ol>
+            <div className="divider"></div>
+          </div>
+        </div>
+      </Col>
+      <Col sm={ 3 }>
+        <div className="card">
+          <h4>History</h4>
+          <div className="divider"></div>
+            <b>Created:</b> { doc.createdAt.toLocaleString() }
+            <br/>
+            <b>Modified:</b> { doc.modifiedAt.toLocaleString() }
+            <br/><br/>
+          <div className="divider"></div>
+        </div>
+      </Col>
+    </Row>
 
 
   </div>
