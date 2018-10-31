@@ -95,6 +95,7 @@ const AuthenticatedNavigation = () => (
       </Nav>
     </div>
 
+
   </div>
 
 );

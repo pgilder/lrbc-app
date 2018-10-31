@@ -2,7 +2,6 @@ import React from 'react';
 import { ListGroup, ListGroupItem, Alert, Button, Row, Col } from 'react-bootstrap';
 
 
-
 const DocumentsList = ({ documents, userName }) => (
 
   <div>

@@ -272,7 +272,7 @@ h5.submitDate {
 .Documents h3.pull-left {
     position: absolute;
     color: #333333;
-    top: 33px;
+    top: 55px;
 }
 }
 /* MOBILE MENU END */
@@ -950,7 +950,7 @@ ul.DocumentsList.list-group {
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #e7e7e7;
-    background: rgba(0, 0, 0, 0.67);
+    background: rgba(0, 0, 0, 0.88);
     width: 100vw;
     left: 15px;
     right: 15px;
@@ -958,6 +958,7 @@ ul.DocumentsList.list-group {
     padding: 0px 40px;
     box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
     top: 69px;
+
 }
 
 .navbar-nav {
@@ -1525,4 +1526,65 @@ img.techpic {
 .ItemBalance {
     float: right;
     color: #50db8d;
+}
+
+
+/* .dashboard-nav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #ebeff4;
+    z-index: 9999999;
+    height: 100vh;
+    width: 166px;
+}
+
+
+div#react-root {
+    position: absolute;
+    left: 165px;
+    right: 0px;
+    top: 0;
+    background: #0f94f6;
+    z-index: 0;
+}*/
+
+
+div#react-root .EditDocument {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #f8f9fa;
+    z-index: 0;
+    bottom: 0;
+    top: 111px;
+    z-index: -1;
+    padding: 30px;
+    color: #333333;
+}
+
+div#react-root .EditDocument .page-header {
+    padding-bottom: 9px;
+    margin: 0px 0 20px;
+    border-bottom: 1px solid #eee;
+    padding-top: 0;
+    top: -30px;
+}
+
+
+div#react-root .EditDocument form {
+    margin-top: 60px;
+}
+
+
+div#react-root .NewDocument form {
+    margin-top: 0px;
+}
+
+
+a.pull-right.btn-add.btn.btn-success {
+    top: 70px;
+    right: 0px;
 }
