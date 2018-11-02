@@ -2,10 +2,19 @@ import React from 'react';
 // import { Row, Col, Button } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
 import DocumentsList from '../containers/DocumentsList.js';
+import AllDocuments from '../containers/AllDocuments.js';
 
 const Documents = () => (
   <div className="Documents">
-      <DocumentsList />
+    <Row>
+      <Col sm={ 12 }>
+        <DocumentsList />
+      </Col>
+      <Col className="aside-right" sm={ 3 }>
+        <h3 class="pull-right">Recent Activity</h3>
+        <AllDocuments />
+      </Col>
+    </Row>
   </div>
 );
 

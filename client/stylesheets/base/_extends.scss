@@ -927,7 +927,7 @@ div#react-root .Index .jumbotron #login-buttons a, .accounts-dialog a {
     padding: 20px;
 }
 ul.DocumentsList.list-group {
-    padding: 0 7vw;
+    padding: 0 0vw;
 }
 
 }
@@ -1587,4 +1587,15 @@ div#react-root .NewDocument form {
 a.pull-right.btn-add.btn.btn-success {
     top: 70px;
     right: 0px;
+}
+
+
+.aside-right.col-sm-3 {
+    position: fixed;
+    right: -270px;
+    background: #f1f1f1;
+    top: 0;
+    bottom: 0;
+    width: 270px;
+    overflow: auto;
 }
