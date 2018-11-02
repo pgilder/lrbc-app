@@ -37,7 +37,7 @@ const handleRemove = (_id) => {
 
 
 
-const ViewDocument = ({ doc }) => !doc ? <div>This customer either doesn't exist or you don't have permission to see it</div> : (
+const ViewDocument = ({ doc }) => !doc ? <div className="no-content">This customer either doesn't exist or you don't have permission to see it</div> : (
   <div className="card ViewDocument">
     <div className="backIcon">
       <a href="/">

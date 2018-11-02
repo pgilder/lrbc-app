@@ -850,9 +850,12 @@ div#react-root .Index .text-center.jumbotron {
     position: relative;
     min-height: 100vh;
     margin: 0px auto;
-    padding-top: 40vw;
-    padding-bottom: 230px;
-    margin-bottom: -99px;
+    bottom: 20px;
+    position: relative;
+    top: 0px;
+    height: 122vh;
+    margin-bottom: -160px;
+    padding-top: 50vh;
 }
 
 div#react-root .Index .jumbotron {
@@ -861,7 +864,6 @@ div#react-root .Index .jumbotron {
     margin-bottom: 30px;
     color: inherit;
     background-color: rgba(20, 126, 242, 0.7);
-    background: radial-gradient(farthest-corner at 50% 110%,rgba(20, 126, 242, 0.7) 0,rgba(35,179,240,.5) 100%);
 }
 
 .text-center.brand-overlay.jumbotron h2 {
@@ -937,7 +939,7 @@ div#react-root .Index .jumbotron #login-buttons a, .accounts-dialog a {
     padding: 20px;
 }
 ul.DocumentsList.list-group {
-    padding: 0 0vw;
+    padding: 0 7vw;
 }
 
 }
@@ -1053,7 +1055,7 @@ div#react-root  .container  .Login .page-header {
 }
 
 div#react-root .Index .text-center.jumbotron {
-    padding-top: 20vh;
+    padding-top: 30vh;
 }
 }
 
@@ -1460,11 +1462,9 @@ label.control-label {font-size: 1rem; color: #696969;}
 .col-sm-3 {
     background: black;
 }
-
 .col-sm-7 {
     background: red;
 }
-
 .col-sm-2 {
     background: black;
 }
@@ -1549,8 +1549,6 @@ img.techpic {
     height: 100vh;
     width: 166px;
 }
-
-
 div#react-root {
     position: absolute;
     left: 165px;
@@ -1599,6 +1597,8 @@ a.pull-right.btn-add.btn.btn-success {
     right: 0px;
 }
 
+
+
 .aside-right.col-sm-3 {
     position: fixed;
     right: -270px;
@@ -1607,6 +1607,7 @@ a.pull-right.btn-add.btn.btn-success {
     bottom: 0;
     width: 270px;
     overflow: auto;
+}
 
 .section2 { min-height: 80vh;}
 .section3 { min-height: 80vh; background: #ecf4ff;}
@@ -1623,7 +1624,7 @@ a.pull-right.btn-add.btn.btn-success {
   position: absolute;
   top: -10vh;
   right: 10vw;
-  height: 400px
+  height: 400px;
 }
 
 .section2-box {
@@ -1656,6 +1657,8 @@ a.pull-right.btn-add.btn.btn-success {
     width: 50vw;
     padding: 10vh;
     color: rgba(255, 255, 255, 0.67);
+    bottom: -110px;
+    position: relative;
 }
 
 @media (max-width: 767px) {.cta-text.brand-overlay { width: 100vw;}}
@@ -1700,4 +1703,10 @@ div#react-root .container .Signup h4.page-header {
     -webkit-transform: skewY(12deg);
     transform: skewY(12deg);
 
+}
+
+.no-content {
+  padding-top: 100px;
+  font-size: 2em;
+  font-weight: 300;
 }
