@@ -208,6 +208,10 @@ h5.submitDate {
     padding: 8px 14px;
 }
 
+.bg-1 {background-image: url(img/bg-1.jpg); height: 100vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+
+.bg-1-cta {background-image: url(img/bg-1.jpg); height: 50vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
+
 .pool-1-bg {background-image: url(img/pool-1.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
 .pool-2-bg {background-image: url(img/pool-2.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
 .pool-3-bg {background-image: url(img/pool-3.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
@@ -223,8 +227,11 @@ h5.submitDate {
 .pool-13-bg {background-image: url(img/pool-13.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
 .pool-14-bg {background-image: url(img/pool-14.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
 .pool-15-bg {background-image: url(img/pool-15.jpg); height: 89.9vh; background-repeat: no-repeat; background-size: cover; background-position-x: center;}
-.brand-overlay {}
+.brand-overlay {    background-color: rgba(20, 126, 242, 0.7);}
 
+
+.btm-margin-10 {margin-bottom: 10px;}
+.btm-margin-20 {margin-bottom: 20px;}
 /* MOBILE MENU START */
 
 @media (max-width: 430px) {
@@ -841,9 +848,11 @@ div#react-root .ViewDocument .contact-links a.btn.btn-default svg {
 
 div#react-root .Index .text-center.jumbotron {
     position: relative;
-    min-height: 90vh;
+    min-height: 100vh;
     margin: 0px auto;
-    padding-top: 50vw;
+    padding-top: 40vw;
+    padding-bottom: 230px;
+    margin-bottom: -99px;
 }
 
 div#react-root .Index .jumbotron {
@@ -852,6 +861,7 @@ div#react-root .Index .jumbotron {
     margin-bottom: 30px;
     color: inherit;
     background-color: rgba(20, 126, 242, 0.7);
+    background: radial-gradient(farthest-corner at 50% 110%,rgba(20, 126, 242, 0.7) 0,rgba(35,179,240,.5) 100%);
 }
 
 .text-center.brand-overlay.jumbotron h2 {
@@ -1589,7 +1599,6 @@ a.pull-right.btn-add.btn.btn-success {
     right: 0px;
 }
 
-
 .aside-right.col-sm-3 {
     position: fixed;
     right: -270px;
@@ -1598,4 +1607,97 @@ a.pull-right.btn-add.btn.btn-success {
     bottom: 0;
     width: 270px;
     overflow: auto;
+
+.section2 { min-height: 80vh;}
+.section3 { min-height: 80vh; background: #ecf4ff;}
+.section4 { min-height: 80vh;}
+.section5 { min-height: 80vh; background: #ecf4ff;}
+.section6 { max-height: 40vh; max-height: 41vh;}
+.img-macbook {
+  position: absolute;
+  top: 20vh;
+  left: -15vw;
+}
+
+.img-iphonex {
+  position: absolute;
+  top: -10vh;
+  right: 10vw;
+  height: 400px
+}
+
+.section2-box {
+    margin-top: 17vh;
+    padding: 0 0 0 7vw;
+}
+
+
+.section2-box a {
+    color: #fff;
+    background-color: #60a2f5 !important;
+    border-color: #4cae4c;
+    width: 90vw;
+    padding: 10px 13px;
+    border: solid 1px #ffffff !important;
+    font-size: 0.7em;
+    margin-top: 6px;
+    max-width: 400px;
+    letter-spacing: 0.1em;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.font-w-200 { font-weight: 200;}
+
+.cta-text.brand-overlay {
+    position: absolute;
+    height: 100%;
+    width: 50vw;
+    padding: 10vh;
+    color: rgba(255, 255, 255, 0.67);
+}
+
+@media (max-width: 767px) {.cta-text.brand-overlay { width: 100vw;}}
+
+
+.brand-overlay-full {
+    background-color: rgba(20, 126, 242, 0.7);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20vh;
+}
+
+
+div#react-root .container .Signup h4.page-header {
+    margin: 16px 0 0px -20px !important;
+    padding-bottom: 10px;
+    color: black !important;
+    padding-top: 0px;
+    position: inherit;
+}
+
+
+.section2-box a.hover { transition: color .5s ease; }
+
+
+.stripes {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    // background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+}
+
+.stripes-offset {
+    -webkit-transform: skewY(12deg);
+    transform: skewY(12deg);
+
 }

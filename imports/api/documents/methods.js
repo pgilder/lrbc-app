@@ -4,8 +4,9 @@ import Documents from './documents';
 import rateLimit from '../../modules/rate-limit.js';
 
 export const upsertDocument = new ValidatedMethod({
+
   name: 'documents.upsert',
-  validate: new SimpleSchema({
+    validate: new SimpleSchema({
     _id: { type: String, optional: true },
     title: { type: String, optional: true },
     body: { type: String, optional: true },
