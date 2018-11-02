@@ -16,8 +16,11 @@ export default class Login extends React.Component {
   render() {
     return (
       <div className="Login">
-        <Row>
-          <Col xs={ 12 } sm={ 12 } md={ 12 }>
+        <Row className="full-height">
+        <Col  className="bg-1-cta login-bg" xs={ 6 } sm={ 6 } md={ 6 }>
+
+        </Col>
+          <Col className="login-box"xs={ 6 } sm={ 6 } md={ 6 }>
             <h4 className="page-header">Login</h4>
               <form ref={ form => (this.loginForm = form) } onSubmit={ this.handleSubmit } >
                 <FormGroup>

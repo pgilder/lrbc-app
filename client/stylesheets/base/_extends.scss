@@ -1030,13 +1030,24 @@ div#react-root  .container  .Signup{
 }
 
 div#react-root  .container  .Login{
-    width: 970px;
-    height: 91vh;
-    margin: 20vh auto;
+  height: 100vh;
+  margin: 0vh;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-div#react-root  .container  .Login .row {
-    padding-bottom: 9px;
+div#react-root  .container  .Login .bg-1-cta {
+    height: 100vh;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+/*div#react-root  .container  .Login .row {
+
+      padding-bottom: 9px;
     border-bottom: 1px solid #eee;
     background: #ffffff;
     box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
@@ -1046,12 +1057,88 @@ div#react-root  .container  .Login .row {
     max-width: 500px;
     border-radius: 20px;
     margin: auto;
+}*/
+
+.login-bg {
+  opacity: .5;
 }
 
+.login-box.col-md-6.col-sm-6.col-xs-6 {
+    height: 100vh;
+    padding: 21vh 10vw;
+    vertical-align: middle;
+    position: relative;
+}
+div#react-root .container .Login .page-header {
+    padding-bottom: 9px;
+    margin: 0px 0px 11px -21px;
+    border-bottom: 0px solid #eee;
+    position: relative;
+}
 div#react-root  .container  .Login .page-header {
     padding-bottom: 9px;
     margin: 0px 0 20px;
     border-bottom: 1px solid #eee;
+}
+
+div#react-root  .container  .Login .row .col-md-6 .bg-1-cta .logib-bg{
+    width: 50%;
+}
+
+div#react-root  .container  .Signup{
+  height: 100vh;
+  margin: 0vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+div#react-root  .container  .Signup .bg-1-cta {
+    height: 100vh;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+/*div#react-root  .container  .Signup .row {
+
+      padding-bottom: 9px;
+    border-bottom: 1px solid #eee;
+    background: #ffffff;
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
+    color: #333333;
+    min-height: 150px;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: auto;
+}*/
+
+.signup-bg {
+  opacity: .5;
+}
+
+.signup-box.col-md-6.col-sm-6.col-xs-6 {
+    height: 100vh;
+    padding: 21vh 10vw;
+    vertical-align: middle;
+    position: relative;
+}
+div#react-root .container .Signup .page-header {
+    padding-bottom: 9px;
+    margin: 0px 0px 11px -21px;
+    border-bottom: 0px solid #eee;
+    position: relative;
+}
+div#react-root  .container  .Signup .page-header {
+    padding-bottom: 9px;
+    margin: 0px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+div#react-root  .container  .Signup .row .col-md-6 .bg-1-cta .logib-bg{
+    width: 50%;
 }
 
 div#react-root .Index .text-center.jumbotron {

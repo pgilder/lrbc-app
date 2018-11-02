@@ -15,6 +15,7 @@ export default class Signup extends React.Component {
   render() {
     return (
       <div className="Signup pool-1-bg">
+
         <div className="brand-overlay-full">
         <Row className="remove-card">
           <Col xs={ 12 } sm={ 12 } md={ 12 }>
