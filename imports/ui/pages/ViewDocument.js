@@ -1,10 +1,10 @@
 import React from 'react';
-import { ButtonToolbar, ButtonGroup, Button } from 'react-bootstrap';
+import { ButtonToolbar, ButtonGroup, Button, Breadcrumb, ToggleButtonGroup} from 'react-bootstrap';
 import { browserHistory } from 'react-router';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { removeDocument } from '../../api/documents/methods.js';
 import { Row, Col } from 'react-bootstrap';
-
+import Avatar from 'react-avatar';
 
 const handleRemove = (_id) => {
   if (confirm('Are you sure? This is permanent!')) {
@@ -39,13 +39,31 @@ const handleRemove = (_id) => {
 
 const ViewDocument = ({ doc }) => !doc ? <div className="no-content">This customer either doesn't exist or you don't have permission to see it</div> : (
   <div className="card ViewDocument">
+    <Breadcrumb>
+      <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+      <Breadcrumb.Item href="/documents">
+        Customer's
+      </Breadcrumb.Item>
+      <Breadcrumb.Item active>{ doc.title }</Breadcrumb.Item>
+    </Breadcrumb>
     <div className="backIcon">
-      <a href="/">
+      <a href="/documents">
         <svg aria-hidden="true" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
         <h4 className="pagetitle">{ doc.title } Profile</h4>
-    </a>
+      </a>
 
     </div>
+    <ButtonToolbar>
+      <ButtonGroup>
+        <Button>On Route</Button>
+        <Button>In Progress</Button>
+        <Button>Completed</Button>
+        <Button>Invoiced</Button>
+      </ButtonGroup>
+    </ButtonToolbar>
+
+
+
     <Row>
       <Col sm={ 4 }>
         <div className="page-header clearfix">
@@ -61,11 +79,11 @@ const ViewDocument = ({ doc }) => !doc ? <div className="no-content">This custom
           </div>
           <div className="ItemPhone1">
             <div>Phone:</div>
-            { doc.phone1 }
+            <tel>{ doc.phone1 }</tel>
           </div>
           <div className="ItemPhone2">
             <div>Alternative Phone:</div>
-            { doc.phone2 }
+            <tel>{ doc.phone2 }</tel>
           </div>
           <ButtonToolbar className="pull-right">
             <ButtonGroup bsSize="small">
@@ -216,6 +234,7 @@ const ViewDocument = ({ doc }) => !doc ? <div className="no-content">This custom
   </div>
 );
 
+// <Avatar color={Avatar.getRandomColor('sitebase', ['red', 'green', 'blue'])} name="Jason Doe" round={true} />
 // ViewDocument.propTypes = {
 //   doc: React.PropTypes.object.isRequired, // commented out to allow null value for doc
 // };

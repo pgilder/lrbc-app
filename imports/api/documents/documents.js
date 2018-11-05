@@ -28,11 +28,11 @@ Documents.schema = new SimpleSchema({
   },
   balance: {
     type: String,
-    label: 'The credit item balance.',
+    label: 'Customer Starting Balance.',
   },
   status: {
     type: String,
-    label: 'The credit item status.',
+    label: 'Customer Starting Status.',
   },
   company: {
     type: String,

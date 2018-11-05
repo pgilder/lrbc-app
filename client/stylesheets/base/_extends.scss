@@ -279,7 +279,7 @@ h5.submitDate {
 .Documents h3.pull-left {
     position: absolute;
     color: #333333;
-    top: 55px;
+    top: -20px;
 }
 }
 /* MOBILE MENU END */
@@ -611,12 +611,12 @@ button.text-danger.btn.btn-default svg {
 .backIcon {
     position: absolute;
     top: 25px;
-    left: 30px;
+    left: 20px;
     width: 100%;
 }
 
 .backIcon a {
-    color: #ffffff;
+    color: #7d7d7d;
     cursor: pointer;
     z-index: 999999;
 }
@@ -633,8 +633,9 @@ button.text-danger.btn.btn-default svg {
     color: #ffffff;
     position: absolute;
     height: 27px;
-    top: -9px;
+    top: 17px;
     left: -2px;
+    z-index: 999999;
 }
 
 .navbar {
@@ -708,12 +709,12 @@ div#react-root .ViewDocument .jobtoolbar h4 {
 
 div#react-root .ViewDocument .profile-pic {
     position: absolute;
-    height: 80px;
-    max-width: 80px;
+    height: 110px;
+    max-width: 110px;
     border-radius: 100px;
     margin: auto;
-    top: 20px;
-    left: 0;
+    top: -50px;
+    left: -160px;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
     width: 100%;
     padding: 5px;
@@ -721,10 +722,12 @@ div#react-root .ViewDocument .profile-pic {
 }
 
 div#react-root .ViewDocument .page-header h4 {
-    margin-top: 90px;
+    margin-top: 0px;
     width: 100%;
     position: relative;
-    text-align: -webkit-center;
+    text-align: -webkit-left;
+    left: 150px;
+
 }
 
 div#react-root .ViewDocument .page-header {
@@ -737,12 +740,7 @@ div#react-root .ViewDocument .page-header {
   position: initial;
 }
 
-.pagetitle {
-  position: absolute;
-  top: -16px;
-  left: 32px;
-  font-weight: 400;
-}
+
 
 
 .card {
@@ -855,9 +853,19 @@ div#react-root .Index .text-center.jumbotron {
     top: 0px;
     height: 122vh;
     margin-bottom: -160px;
-    padding-top: 50vh;
+    padding-top: 45vh;
 }
 
+@media (max-width: 430px) {
+  div#react-root .Index .text-center.jumbotron {
+      padding-top: 45vh;
+  }
+}
+@media (max-width: 767px) {
+  div#react-root .Index .text-center.jumbotron {
+      padding-top: 45vh;
+  }
+}
 div#react-root .Index .jumbotron {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -968,7 +976,7 @@ ul.DocumentsList.list-group {
     right: 15px;
     position: absolute;
     padding: 0px 40px;
-    box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.325rem 0.85rem 0 rgba(71, 130, 197, 0.88);
     top: 69px;
 
 }
@@ -990,6 +998,10 @@ nav .navbar-nav li.active {
     box-shadow: 0px -1px 20px 10px rgba(0, 0, 0, 0.2);
     width: 80vw;
     margin: auto;
+}
+
+.navbar-collapse.collapse.in {
+    background: rgba(73, 127, 191, 0.85);
 }
 
 @media (min-width: 992px) {
@@ -1142,7 +1154,7 @@ div#react-root  .container  .Signup .row .col-md-6 .bg-1-cta .logib-bg{
 }
 
 div#react-root .Index .text-center.jumbotron {
-    padding-top: 30vh;
+    padding-top: 50vh;
 }
 }
 
@@ -1254,7 +1266,7 @@ h5.submitDate {
     left: 0;
     right: 0;
     position: absolute;
-    top: 120px;
+    top: 0px;
     padding-bottom: 20px;
     margin: 6% 6% 6% 3%;
 }
@@ -1298,13 +1310,15 @@ div#react-root .ViewDocument {
     left: 0;
     right: 0;
     top: 0;
-    background: #0f94f6;
+    // background: #0f94f6;
+    background: #e3e3e3;
     z-index: 0;
     bottom: 0;
     top: 60px;
     z-index: -1;
     padding: 58px 30px 30px 30px;
     color: #ffffff;
+    border-radius: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1647,7 +1661,7 @@ div#react-root {
 
 
 div#react-root .EditDocument {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -1680,7 +1694,7 @@ div#react-root .NewDocument form {
 
 
 a.pull-right.btn-add.btn.btn-success {
-    top: 70px;
+    top: 0px;
     right: 0px;
 }
 
@@ -1719,7 +1733,6 @@ a.pull-right.btn-add.btn.btn-success {
     padding: 0 0 0 7vw;
 }
 
-
 .section2-box a {
     color: #fff;
     background-color: #60a2f5 !important;
@@ -1747,10 +1760,6 @@ a.pull-right.btn-add.btn.btn-success {
     bottom: -110px;
     position: relative;
 }
-
-@media (max-width: 767px) {.cta-text.brand-overlay { width: 100vw;}}
-
-
 .brand-overlay-full {
     background-color: rgba(20, 126, 242, 0.7);
     height: 100vh;
@@ -1762,18 +1771,7 @@ a.pull-right.btn-add.btn.btn-success {
     padding-top: 20vh;
 }
 
-
-div#react-root .container .Signup h4.page-header {
-    margin: 16px 0 0px -20px !important;
-    padding-bottom: 10px;
-    color: black !important;
-    padding-top: 0px;
-    position: inherit;
-}
-
-
 .section2-box a.hover { transition: color .5s ease; }
-
 
 .stripes {
     width: 100%;
@@ -1797,3 +1795,129 @@ div#react-root .container .Signup h4.page-header {
   font-size: 2em;
   font-weight: 300;
 }
+
+/* HOMEPAGE START */
+
+@media (max-width: 430px) {
+  div#react-root .ViewDocument {background-image: url(img/map.jpg); height: 250px; padding-top: 280px;}
+  div#react-root .Index .text-center.jumbotron {padding-top: 35vh;}
+  svg {height: 24px;}
+
+  .section2 .img-iphonex {top: -390px; right: -40px;}
+  .section2 .img-macbook {top: 44vh; left: -47vw;}
+  .section2 .section2-box {margin-top: 4vh; width: 64vw;}
+  .section2-box a {padding: 12px 17px; border: solid 0px #ffffff !important;font-size: 1.1em; border-radius: 4px;}
+
+  .section3 {margin-top: 11px;}
+  .section3 .img-iphonex {top: 15vh; right: 0vw; left: -40px;}
+  .section3 .img-macbook {top: 70vh;left: 116px;}
+  .section3 .section2-box {margin-top: 19vh;width: 64vw;float: right;}
+  .section3-box a {padding: 12px 17px; border: solid 0px #ffffff !important;font-size: 1.1em; border-radius: 4px;}
+
+  .section4 {margin-top: 391px;}
+  .section4 .img-iphonex {top: -390px; right: -40px;}
+  .section4 .img-macbook {top: 44vh; left: -47vw;}
+  .section4 .section2-box {margin-top: 4vh; width: 64vw;}
+  .section4-box a {padding: 12px 17px; border: solid 0px #ffffff !important;font-size: 1.1em; border-radius: 4px;}
+
+  .section5 {margin-top: 220px;}
+  .section5 .img-iphonex {top: -390px; right: -40px;}
+  .section5 .img-macbook {top: 44vh; left: -47vw;}
+  .section5 .section2-box {margin-top: 4vh; width: 64vw;}
+  .section5-box a {padding: 12px 17px; border: solid 0px #ffffff !important;font-size: 1.1em; border-radius: 4px;}
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {background-color: rgba(255, 255, 255, 0.25098039215686274) !important;}
+  .toolbar-nav ul.nav.navbar-nav.navbar-right {background: rgba(50, 218, 145, 0) !important;}
+}
+@media screen and (min-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .breadcrumb {padding: 8px 15px;margin-bottom: 20px;list-style: none;background-color: #f5f5f5;border-radius: 4px;margin-top: -45px;}
+}
+@media (min-width: 992px) {}
+
+@media (max-width: 767px) {.cta-text.brand-overlay { width: 100vw;}}
+
+div#react-root .container .Signup h4.page-header {
+    margin: 16px 0 0px -20px !important;
+    padding-bottom: 10px;
+    color: black !important;
+    padding-top: 0px;
+    position: inherit;
+}
+
+/* HOMEPAGE END */
+
+/* DOCUMENT VIEW START */
+
+@media (max-width: 430px) {
+  .ItemBody {margin-top: 60px;}
+  .ItemCompany {font-weight: 200;font-size: 1.3em;display: flex;}
+  .ItemCompany div {font-weight: 600;text-transform: uppercase;font-size: 0.7em;}
+  .ItemPhone1 {font-weight: 200;font-size: 1.3em;display: flex;}
+  .ItemPhone1 div {font-weight: 600;text-transform: uppercase;font-size: 0.7em;}
+  .ItemPhone2 {font-weight: 200;font-size: 1.3em;display: flex;}
+  .ItemPhone2 div {font-weight: 600;text-transform: uppercase;font-size: 0.7em;}
+  .pagetitle {position: absolute;top: 0px;left: -20px;font-weight: 200;opacity: 0.5;background: black;padding: 14px;width: 100vw;right: 0;color: #fff;text-align: center;box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.7);text-transform: uppercase;letter-spacing: 0.2em;font-size: 1em;}
+  .DocumentsList.list-group {left: 0;right: 0;position: absolute;top: -16px;padding-bottom: 20px;margin: 6% 2% 6% -6%;}
+  .breadcrumb {padding: 8px 15px;margin-bottom: 20px;list-style: none;background-color: #f5f5f5;border-radius: 0px;margin-top: -48px;position: absolute;top: 48px;left: 0;right: 0;}
+
+}
+@media (max-width: 767px) {}
+@media screen and (min-width: 768px) {}
+@media screen and (max-width: 768px) {}
+@media (min-width: 992px) {}
+@media (max-width: 767px) {}
+
+/* DOCUMENT VIEW END */
+
+/* EDIT VIEW START */
+
+@media (max-width: 430px) {
+div#react-root .NewDocument .page-header {padding-bottom: 9px;margin: -100px 0 21px;border-bottom: 1px solid #eee;}
+div#react-root .NewDocument h4.page-header {color: #333333;}
+div#react-root .ViewDocument .btn-toolbar {margin-left: auto;position: absolute;bottom: 20px;z-index: 9999999;left: 16px;top: 92px;}
+button.btn.btn-default:focus {background: #3dda93;border: 0;color: #fff;font-weight: 600;}
+.btn-default {
+    color: #333;background-color: #fff;    border-color: #e2e2e2;}
+}
+@media (max-width: 767px) {
+  .backIcon svg {top: -73px;}
+  div#react-root .ViewDocument .page-header {margin-top: 130px;}
+  .ItemBody {margin-top: 60px;}
+  .ItemCompany {font-weight: 200;font-size: 1.3em;display: flex;}
+  .ItemCompany div {font-weight: 600;text-transform: uppercase;font-size: 0.7em;}
+  .ItemPhone1 {font-weight: 200;font-size: 1.3em;display: flex;}
+  .ItemPhone1 div {font-weight: 600;text-transform: uppercase;font-size: 0.7em;}
+  .ItemPhone2 {font-weight: 200;font-size: 1.3em;display: flex;}
+  .ItemPhone2 div {font-weight: 600;text-transform: uppercase;font-size: 0.7em;}
+  .pagetitle {position: absolute;top: 0px;left: -20px;font-weight: 200;opacity: 0.5;background: black;padding: 14px;width: 100vw;right: 0;color: #fff;text-align: center;box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.7);text-transform: uppercase;letter-spacing: 0.2em;font-size: 1em;}
+  .DocumentsList.list-group {left: 0;right: 0;position: absolute;top: -16px;padding-bottom: 20px;margin: 6% 2% 6% -6%;}
+  .breadcrumb {padding: 8px 15px;margin-bottom: 20px;list-style: none;background-color: #f5f5f5;border-radius: 0px;margin-top: -48px;position: absolute;top: 48px;left: 0;right: 0;}
+  div#react-root .ViewDocument {background-image: url(img/map.jpg);height: 250px;padding-top: 280px;}
+}
+@media screen and (min-width: 768px) {
+  .backIcon svg {top: -73px;}
+  div#react-root .ViewDocument .page-header {margin-top: 130px;}
+  .ItemBody {margin-top: 60px;}
+  .ItemCompany {font-weight: 200;font-size: 1.3em;display: flex;}
+  .ItemCompany div {font-weight: 600;text-transform: uppercase;font-size: 0.7em;}
+  .ItemPhone1 {font-weight: 200;font-size: 1.3em;display: flex;}
+  .ItemPhone1 div {font-weight: 600;text-transform: uppercase;font-size: 0.7em;}
+  .ItemPhone2 {font-weight: 200;font-size: 1.3em;display: flex;}
+  .ItemPhone2 div {font-weight: 600;text-transform: uppercase;font-size: 0.7em;}
+  .pagetitle {position: absolute;top: 0px;left: -20px;font-weight: 200;opacity: 0.5;background: black;padding: 14px;width: 100vw;right: 0;color: #fff;text-align: center;box-shadow: 0 0.325rem 0.85rem 0 rgba(0, 0, 0, 0.7);text-transform: uppercase;letter-spacing: 0.2em;font-size: 1em;}
+  .DocumentsList.list-group {left: 0;right: 0;position: absolute;top: -16px;padding-bottom: 20px;margin: 6% 2% 6% -6%;}
+  .breadcrumb {padding: 8px 15px;margin-bottom: 20px;list-style: none;background-color: #f5f5f5;border-radius: 0px;margin-top: -48px;position: absolute;top: 48px;left: 0;right: 0;}
+  div#react-root .ViewDocument {background-image: url(img/map.jpg);height: 250px;padding-top: 280px;}
+  div#react-root .ViewDocument .btn-toolbar {margin-left: -5px;position: absolute;bottom: 30px;z-index: 9999999;right: 3.6vw; color: #fff !important;}
+  button.btn.btn-default:focus {background: #3dda93;color: #fff;font-weight: 600;border: 0;}
+}
+@media screen and (max-width: 768px) {}
+@media (min-width: 992px) {}
+@media (max-width: 767px) {}
+button.btn.btn-default:focus {background: rgb(61, 218, 147);
+}
+
+
+/* EDIT VIEW END */

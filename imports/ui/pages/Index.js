@@ -49,7 +49,7 @@ const Index = () => (
            <div>
              <Row>
                <Col sm={ 4 }>
-                 <img className="img-macbook" src="/img/image_macbook.png"></img>
+                 <img className="img-macbook" src="/img/image_macbook_1.png"></img>
                </Col>
                <Col sm={ 4 }>
                  <div className="section2-box">
@@ -60,7 +60,7 @@ const Index = () => (
                  </div>
                </Col>
                <Col sm={ 4 }>
-                 <img className="img-iphonex" src="/img/image_iphonex.png"></img>
+                 <img className="img-iphonex" src="/img/image_iphonex_1.png"></img>
                </Col>
              </Row>
            </div>
@@ -74,7 +74,7 @@ const Index = () => (
             <div>
               <Row>
                 <Col sm={ 4 }>
-                  <img className="img-macbook" src="/img/image_macbook.png"></img>
+                  <img className="img-macbook" src="/img/image_macbook_1.png"></img>
                 </Col>
                 <Col sm={ 4 }>
                   <div className="section2-box">
@@ -85,7 +85,7 @@ const Index = () => (
                   </div>
                 </Col>
                 <Col sm={ 4 }>
-                  <img className="img-iphonex" src="/img/image_iphonex.png"></img>
+                  <img className="img-iphonex" src="/img/image_iphonex_2.png"></img>
                 </Col>
               </Row>
             </div>
@@ -110,7 +110,7 @@ const Index = () => (
                    </div>
                  </Col>
                  <Col sm={ 4 }>
-                   <img className="img-iphonex" src="/img/image_iphonex.png"></img>
+                   <img className="img-iphonex" src="/img/image_iphonex_3.png"></img>
                  </Col>
                </Row>
              </div>
