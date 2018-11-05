@@ -1921,3 +1921,16 @@ button.btn.btn-default:focus {background: rgb(61, 218, 147);
 
 
 /* EDIT VIEW END */
+
+
+/* NEW POOL */
+
+div#react-root .NewPoolroute {top: 90px;}
+div#react-root .NewPoolroute h4.page-header {color: #6d6969;}
+div#react-root .NewPoolroute .page-header{padding-bottom: 157px;margin: 0px 0 21px;}
+.pooltype {display: flex; }
+.img-pool{width: 33%;height: auto;position: absolute;top: 55px;margin: 0 auto;}
+.img-spa{width: 33%;height: auto;position: absolute;top: 55px;margin: 0 auto;}
+.img-pool-spa{width: 33%;height: auto;position: absolute;top: 55px;margin: 0 auto;}
+input[type=checkbox], input[type=radio] {box-shadow: none !important;}
+.pooltype-title{position: absolute;position: absolute; font-size: 0.9em !important; top: 40px;text-align: center;width: 100%;}

@@ -1,7 +1,7 @@
 /* eslint-disable max-len, no-return-assign */
 
 import React from 'react';
-import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
+import { FormGroup, ControlLabel, FormControl, Button, Label, Input } from 'react-bootstrap';
 import poolrouteEditor from '../../modules/poolroute-editor.js';
 
 export default class PoolrouteEditor extends React.Component {
@@ -16,6 +16,31 @@ export default class PoolrouteEditor extends React.Component {
       ref={ form => (this.poolrouteEditorForm = form) }
       onSubmit={ event => event.preventDefault() }
     >
+
+      <FormGroup className="pooltype">
+        <ControlLabel className="pooltype-title">Select A Pool Type</ControlLabel>
+        <ControlLabel><img className="img-pool" src="/icons/pool.png"></img></ControlLabel>
+        <FormControl
+          type="radio"
+          name="pooltype"
+          defaultValue={ doc && doc.pooltype }
+          placeholder="Select a Pool Type"
+        />
+        <ControlLabel><img className="img-spa" src="/icons/spa.png"></img></ControlLabel>
+        <FormControl
+          type="radio"
+          name="pooltype"
+          defaultValue={ doc && doc.pooltype }
+          placeholder="Select a Pool Type"
+        />
+        <ControlLabel><img className="img-pool-spa" src="/icons/poolandspa.png"></img></ControlLabel>
+        <FormControl
+          type="radio"
+          name="pooltype"
+          defaultValue={ doc && doc.pooltype }
+          placeholder="Select a Pool Type"
+        />
+      </FormGroup>
       <FormGroup>
         <ControlLabel>Poolroute Name</ControlLabel>
         <FormControl

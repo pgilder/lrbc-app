@@ -3,8 +3,8 @@ import { Roles } from 'meteor/alanning:roles';
 import { Accounts } from 'meteor/accounts-base';
 
 const users = [{
-  email: 'admin@admin.com',
-  password: 'password',
+  email: 'pgilder@designdelegate.co',
+  password: '11111111',
   profile: {
     name: { first: 'Admin', last: 'Admin' },
   },
