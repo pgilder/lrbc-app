@@ -1,6 +1,8 @@
 import React from 'react';
 // import { Row, Col, Button } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
+import Loading from '../components/Loading.js';
+import SearchBox from '../components/SearchBox.js';
 
 
 const Tutorials = () => (

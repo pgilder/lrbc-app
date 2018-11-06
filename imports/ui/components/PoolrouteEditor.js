@@ -3,6 +3,8 @@
 import React from 'react';
 import { FormGroup, ControlLabel, FormControl, Button, Label, Input } from 'react-bootstrap';
 import poolrouteEditor from '../../modules/poolroute-editor.js';
+import Autosuggest from 'react-autosuggest';
+
 
 export default class PoolrouteEditor extends React.Component {
   componentDidMount() {
@@ -16,7 +18,6 @@ export default class PoolrouteEditor extends React.Component {
       ref={ form => (this.poolrouteEditorForm = form) }
       onSubmit={ event => event.preventDefault() }
     >
-
       <FormGroup className="pooltype">
         <ControlLabel className="pooltype-title">Select A Pool Type</ControlLabel>
         <ControlLabel><img className="img-pool" src="/icons/pool.png"></img></ControlLabel>
@@ -25,6 +26,7 @@ export default class PoolrouteEditor extends React.Component {
           name="pooltype"
           defaultValue={ doc && doc.pooltype }
           placeholder="Select a Pool Type"
+          autocomplete="on"
         />
         <ControlLabel><img className="img-spa" src="/icons/spa.png"></img></ControlLabel>
         <FormControl
